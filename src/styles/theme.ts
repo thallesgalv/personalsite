@@ -2,7 +2,8 @@ const theme = {
   colors: {
     primary: '#50C9EB',
     secondary: '#EB5B8A',
-    background: '#22212C',
+    // background: '#22212C',
+    background: 'red',
     text: '#50C9EB',
     menu: '#282A36',
     contrast: '#14141B',

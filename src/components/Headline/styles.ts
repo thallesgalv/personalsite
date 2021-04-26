@@ -2,9 +2,6 @@ import styled from 'styled-components'
 
 export const StyledHeadline = styled.h1`
   text-align: right;
-  position: absolute;
-  right: 0;
-  top: 40%;
 `
 export const RotateContainer = styled.div`
   overflow: hidden;

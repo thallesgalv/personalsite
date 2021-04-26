@@ -1,21 +1,20 @@
 import Head from 'next/head'
+import Button from '../components/Button'
 import Header from '../components/Header'
 import Headline from '../components/Headline'
-import Section from '../components/Section'
+import Hero from '../template/Hero'
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Homepage</title>
       </Head>
       <Header />
       <main>
-        <Section>
-          <Headline />
-        </Section>
+        <Hero />
       </main>
-    </div>
+    </>
   )
 }
 

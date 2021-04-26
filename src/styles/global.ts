@@ -28,6 +28,6 @@ export default createGlobalStyle`
 body {
   background: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
-  font: 400 1.25rem/1.75rem 'Poppins';
+  font: ${({ theme }) => theme.font.default};
 }
 `

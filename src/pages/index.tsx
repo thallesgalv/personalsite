@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Button from '../components/Button'
 import Header from '../components/Header'
-import Headline from '../components/Headline'
+import Logo from '../components/Logo'
+import Shape from '../components/Shape'
 import Hero from '../template/Hero'
 
 const Home: React.FC = () => {
@@ -12,7 +12,9 @@ const Home: React.FC = () => {
       </Head>
       <Header />
       <main>
+        <Logo nights big />
         <Hero />
+        <Shape />
       </main>
     </>
   )

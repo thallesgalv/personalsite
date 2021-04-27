@@ -29,5 +29,6 @@ body {
   background: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
   font: ${({ theme }) => theme.font.default};
+  overflow-x: hidden;
 }
 `

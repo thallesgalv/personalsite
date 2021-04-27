@@ -9,6 +9,12 @@ export const Container = styled.section`
   @media (max-width: 767px) {
     margin: 0 1rem;
   }
+
+  >img {
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+  }
 `
 
 export const Content = styled.div`
@@ -16,7 +22,7 @@ export const Content = styled.div`
   right: 0;
   top: 40%;
 `
-export const Flex = styled.div`
+export const ButtonContainer = styled.section`
 position: absolute;
 right: 0;
 display: flex;

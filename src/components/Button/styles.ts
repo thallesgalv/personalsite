@@ -30,4 +30,12 @@ export const StyledButton = styled.button<ButtonProps>`
         opacity: 1;
       }
     `}
+
+  ${({ small }) =>
+    small &&
+    css`
+      font: ${({ theme }) => theme.font.small};
+      padding: .5rem;
+      font-weight: 400;
+    `}
 `

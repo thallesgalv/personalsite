@@ -11,7 +11,8 @@ const theme = {
   font: {
     primary: 'Poppins',
     secondary: 'IBM Plex Mono',
-    default: "400 1.25rem/1.75rem 'Poppins'"
+    default: "400 1.25rem/1.75rem 'Poppins'",
+    small: "400 0.875rem/1.25rem 'Poppins'"
   },
   menuHeight: 60,
   footerHeight: 60,

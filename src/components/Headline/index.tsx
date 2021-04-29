@@ -3,25 +3,34 @@ import { useState, useRef, useEffect } from 'react'
 
 const Headline: React.FC = () => {
   const [axisY, setAxisY] = useState(0)
+  const [windowWidth, setwindowWidth] = useState(null)
   const move = useRef<HTMLDivElement>(null)
   const mainHeading = useRef<HTMLDivElement>(null)
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     move.current.style.transform = `translateY(-${axisY}px)`
-  //     setAxisY(axisY + mainHeading.current.getBoundingClientRect().height)
+  function wordSlider() {
+    move.current.style.transform = `translateY(-${axisY}px)`
+    setAxisY(axisY + mainHeading.current.getBoundingClientRect().height)
 
-  //     if (
-  //       axisY ===
-  //       mainHeading.current.getBoundingClientRect().height *
-  //         (move.current.children.length - 1)
-  //     ) {
-  //       setAxisY(0)
-  //     }
-  //   }, 2000)
+    if (
+      axisY ===
+      mainHeading.current.getBoundingClientRect().height *
+        (move.current.children.length - 1)
+    ) {
+      setAxisY(0)
+    }
+  }
 
-  //   return () => clearInterval(interval)
-  // }, [axisY])
+  useEffect(() => {
+    const interval = setInterval(wordSlider, 2000)
+
+    return () => clearInterval(interval)
+  }, [axisY, windowWidth])
+
+  useEffect(() => {
+    window.addEventListener('resize', wordSlider)
+
+    return () => window.addEventListener('resize', wordSlider)
+  }, [])
 
   return (
     <StyledHeadline>

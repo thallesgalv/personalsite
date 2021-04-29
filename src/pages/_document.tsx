@@ -46,7 +46,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,600&family=Poppins:wght@200;400;600&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href="" />
+          {/* <link rel="icon" href="" /> */}
         </Head>
         <body>
           <Main />

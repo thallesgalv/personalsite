@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Header from '../components/Header'
-import Logo from '../components/Logo'
 import Shape from '../components/Shape'
+import useMatchMedia from '../hooks/useMatchMedia'
 import Hero from '../template/Hero'
 
 const Home: React.FC = () => {
+  const breakPointDesktop: string = useMatchMedia('(min-width: 1100px')
+
   return (
     <>
       <Head>
@@ -12,9 +14,8 @@ const Home: React.FC = () => {
       </Head>
       <Header />
       <main>
-        <Logo nights big />
         <Hero />
-        <Shape />
+        {breakPointDesktop && <Shape />}
       </main>
     </>
   )

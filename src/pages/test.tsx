@@ -6,14 +6,14 @@ const Test: React.FC = (props) => {
     <div style={{ height: '100vh', display: 'grid', placeItems: 'center' }}>
       <Button>Vamos trabalhar juntos?</Button>
 
-      <p>{JSON.stringify(props.techs.name)}</p>
+      <p>{JSON.stringify(props.techs[0].id)}</p>
 
     </div>
   )
 }
 
 export async function getServerSideProps() {
-  const response = await fetch ('http://localhost:3000/api/techs')
+  const response = await fetch ('https://ranekapi.origamid.dev/json/api/produto/')
   const data = await response.json()
   return {
     props: {

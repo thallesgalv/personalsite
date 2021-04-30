@@ -19,7 +19,7 @@ export const StyledHeader = styled.header`
     text-transform: uppercase;
     gap: 1rem;
 
-    a {
+    >a {
       color: ${({ theme }) => theme.colors.text};
       display: flex;
       justify-content: center;

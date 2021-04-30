@@ -23,7 +23,7 @@ const TechIcon: React.FC<TechIconProps> = ({
 }) => {
   const { english } = useEnglish()
   return (
-    <Wrapper small={small} color={color}>
+    <Wrapper small={small} color={color} title={english ? eng : name}>
       <Container color={color} small={small}>
         <img src={`data:image/svg+xml;utf8,${icon}`}></img>
       </Container>

@@ -2,8 +2,8 @@
   "portifolio": [
     {
       "name": "Sushi Bowl",
-      "description": "Projeto pessoal desenvolvido para treinar e estudar de forma prática conceitos e princípios do ReactJs para construção de websites. Principais objetivos: criar familiaridade com ambiente do React Js, criação de componentes simples e complexos dentro de uma aplicação web, validação de formulários, design de interface e responsividade",
-      "techs": "[ReactJs, Sass, Adobe XD]",
+      "description": "Projeto pessoal desenvolvido para treinar e estudar de forma prática conceitos e princípios do ReactJs para construção de websites. Principais objetivos: criar familiaridade com ambiente do React Js, criação de componentes simples e complexos dentro de uma aplicação web, validação de formulários, design de interface e responsividade.",
+      "techs": "ReactJs,Sass",
       "link": "https://thallesgalv.github.io/sushibowl/"
     }
   ]

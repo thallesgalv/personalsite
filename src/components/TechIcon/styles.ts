@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { TechIconCssProps } from '.'
 
 export const Wrapper = styled.div<TechIconCssProps>`
-  width: ${({ small }) => small ? '2.75' : '6.25rem'};
+  width: ${({ small }) => small ? '2.75rem' : '6.25rem'};
   display: flex;
   justify-content: center;
   align-items: center;

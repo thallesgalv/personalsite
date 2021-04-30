@@ -3,7 +3,7 @@ import { ButtonProps } from '.'
 
 export const StyledButton = styled.button<ButtonProps>`
   outline: 0;
-  padding: 1rem;
+  padding: .75rem 1rem;
   text-transform: uppercase;
   background-color: ${({ theme }) => theme.colors.primary};
   border: 1px solid ${({ theme }) => theme.colors.primary};
@@ -14,9 +14,16 @@ export const StyledButton = styled.button<ButtonProps>`
   font-weight: 400;
   transition: all 0.2s ease-in-out;
 
+  a {
+    color: ${({ theme }) => theme.colors.dark};
+  }
+
   &:hover {
     background: transparent;
     color: ${({ theme }) => theme.colors.primary};
+    a {
+      color: ${({ theme }) => theme.colors.primary};
+    }
   }
 
   ${({ secondary }) =>
@@ -25,6 +32,10 @@ export const StyledButton = styled.button<ButtonProps>`
       background: transparent;
       color: ${({ theme }) => theme.colors.primary};
       opacity: 0.7;
+
+      a {
+        color: ${({ theme }) => theme.colors.primary};
+      }
 
       &:hover {
         opacity: 1;
@@ -35,7 +46,7 @@ export const StyledButton = styled.button<ButtonProps>`
     small &&
     css`
       font: ${({ theme }) => theme.font.small};
-      padding: .5rem;
+      padding: 0.5rem;
       font-weight: 400;
     `}
 `

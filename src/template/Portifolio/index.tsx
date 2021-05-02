@@ -22,6 +22,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[0].name}
           description={data.portifolio[0].description}
+          eng={data.portifolio[0].eng}
           techs={data.portifolio[0].techs}
           link={data.portifolio[0].link}
           image={MockupSushiBowl}
@@ -30,6 +31,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[1].name}
           description={data.portifolio[1].description}
+          eng={data.portifolio[1].eng}
           techs={data.portifolio[1].techs}
           link={data.portifolio[1].link}
           image={MockupTMobile}
@@ -38,6 +40,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[2].name}
           description={data.portifolio[2].description}
+          eng={data.portifolio[2].eng}
           techs={data.portifolio[2].techs}
           link={data.portifolio[2].link}
           image={MockupScaryPages}
@@ -46,6 +49,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[3].name}
           description={data.portifolio[3].description}
+          eng={data.portifolio[3].eng}
           techs={data.portifolio[3].techs}
           link={data.portifolio[3].link}
           image={MockupLacca}
@@ -54,6 +58,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[4].name}
           description={data.portifolio[4].description}
+          eng={data.portifolio[4].eng}
           techs={data.portifolio[4].techs}
           link={data.portifolio[4].link}
           image={MockupAtma}
@@ -62,6 +67,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[5].name}
           description={data.portifolio[5].description}
+          eng={data.portifolio[5].eng}
           techs={data.portifolio[5].techs}
           link={data.portifolio[5].link}
           image={MockupEdex}
@@ -70,6 +76,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[6].name}
           description={data.portifolio[6].description}
+          eng={data.portifolio[6].eng}
           techs={data.portifolio[6].techs}
           link={data.portifolio[6].link}
           image={MockupMira}
@@ -78,6 +85,7 @@ const Portifolio: React.FC = () => {
           tag="Projeto"
           title={data.portifolio[7].name}
           description={data.portifolio[7].description}
+          eng={data.portifolio[7].eng}
           techs={data.portifolio[7].techs}
           link={data.portifolio[7].link}
           image={MockupIntegracao}

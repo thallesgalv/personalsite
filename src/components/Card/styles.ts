@@ -6,11 +6,16 @@ export const Wrapper = styled.div`
   align-items: center;
   margin: 4rem 0;
 
+  opacity: 0;
+  transition: .6s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
   &:nth-child(odd) {
     justify-content: flex-start;
+    transform: translate3d(-50%, 0, 0);
   }
   &:nth-child(even) {
     justify-content: flex-end;
+    transform: translate3d(50%, 0, 0);
   }
 
   @media (max-width: 768px) {
@@ -29,7 +34,13 @@ export const Wrapper = styled.div`
       }
     }
   }
+
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 `
+
 export const Container = styled.div`
   width: max(35%, 600px);
   border: ${({ theme }) => theme.rem(5)} solid

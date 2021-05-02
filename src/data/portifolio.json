@@ -4,6 +4,7 @@
           "id": "0",
           "name": "Sushi Bowl",
           "description": "Projeto pessoal desenvolvido para treinar e estudar de forma prática conceitos e princípios do ReactJs para construção de websites. Principais objetivos: criar familiaridade com ambiente do React Js, criação de componentes simples e complexos dentro de uma aplicação web, validação de formulários, design de interface e responsividade.",
+          "eng": "Texto  SushiBowl em inglês.",
           "techs": "ReactJs,Sass,Adobe XD",
           "link": "https://thallesgalv.github.io/sushibowl/"
       },
@@ -11,12 +12,14 @@
           "id": "1",
           "name": "T-Mobile Landing Page",
           "description": "Os principais objetivos desse projeto pessoal foram: treinar princípios de ReactJs e NextJs, design de interface de landing page no Figma, animações CSS e styled-components.",
+          "eng": "Texto em inglês.",
           "techs": "ReactJs,Next.js,TypeScript,Styled-Components,Figma"
       },
       {
           "id": "2",
           "name": "Scary Pages",
           "description": "Projeto pessoal realizado com a intenção de estudar a configuração de ambiente de trabalho para utilização de Typescript com create-react-app, eslint e prettier, produção de uma \"fake API\" e utilização do Axios para consumi-la. Além da experimentação de animações com Lottie na aplicação.",
+          "eng": "Texto em inglês.",
           "techs": "ReactJs,TypeScript,Styled-Components,Adobe XD",
           "link": "https://thallesgalv.github.io/scary-pages/"
       },
@@ -24,6 +27,7 @@
           "id": "3",
           "name": "Lacca",
           "description": "Site institucional profissional do empreendimento Lacca, edifício de mais de 80 apartamentos construído pela Edex Construtora. *Projeto produzido na EGO Comunicação Estratégica (design realizado por terceiro).",
+          "eng": "Texto em inglês.",
           "techs": "HTML 5,CSS 3,JavaScript,GreenSock,Gulp",
           "link": "https://laccavilarica.com.br/"
       },
@@ -31,6 +35,7 @@
           "id": "4",
           "name": "Atma",
           "description": "A Atma Proteção é uma empresa especializada em sistemas de câmeras de monitoramento e segurança residencial. Produzimos na EGO Comunicação Estratégica um site institucional com seus produtos e serviços (design realizado por terceiro).",
+          "eng": "Texto em inglês.",
           "techs": "HTML 5,CSS 3,JavaScript,.Net",
           "link": "http://www.atmaprotecao.com.br/"
       },
@@ -38,6 +43,7 @@
           "id": "5",
           "name": "Edex Incorporadora",
           "description": "Site institucional da Edex Construtora e Incorporadora, uma das principais construtoras de edifícios residenciais do litoral de São Paulo. *Projeto produzido na EGO Comunicação Estratégica (design realizado por terceiro).",
+          "eng": "Texto em inglês.",
           "techs": "HTML 5,CSS 3,JavaScript,.Net",
           "link": "http://edexincorporadora.com.br/"
       },
@@ -45,6 +51,7 @@
           "id": "6",
           "name": "Mira",
           "description": "A Mira Transportes é uma das empresas de logística e transporte rodoviário mais tradicionais do País. Visando aumentar e modernizar a sua presença digital, a transportadora solicitou um novo site institucional. O projeto foi realizado na EGO Comunicação Estratégica (design realizado por terceiro).",
+          "eng": "Texto em inglês.",
           "techs": "HTML 5,CSS 3,JavaScript,.Net",
           "link": "https://www.mira.com.br/"
       },
@@ -52,6 +59,7 @@
           "id": "7",
           "name": "Colégio Integração",
           "description": "Site institucional do Colégio Integração, uma escola particular localizada no litoral de São Paulo. *Projeto produzido na EGO Comunicação Estratégica (design realizado por terceiro).",
+          "eng": "Texto em inglês.",
           "techs": "HTML 5,CSS 3,JavaScript",
           "link": "http://v6.souintegracao.com.br/"
       }

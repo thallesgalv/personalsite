@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Shape from '../components/Shape'
 import useMatchMedia from '../hooks/useMatchMedia'
+import About from '../template/About'
 import Hero from '../template/Hero'
 import Portifolio from '../template/Portifolio'
 
@@ -18,6 +19,7 @@ const Home: React.FC = () => {
         <Hero />
         {breakPointDesktop && <Shape />}
         <Portifolio />
+        <About />
       </main>
     </>
   )

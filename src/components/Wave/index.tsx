@@ -2,10 +2,10 @@ import { Container, WrapperBottom, WrapperBox, WrapperTop } from './styles'
 
 export type WaveProps = {
   color: string
-  boxHeight: number
+  boxHeight?: number
 }
 
-const Wave: React.FC<WaveProps> = ({ color, boxHeight }) => {
+const Wave: React.FC<WaveProps> = ({ color, boxHeight, children }) => {
   return (
     <Container>
       <WrapperBottom>
@@ -29,7 +29,7 @@ const Wave: React.FC<WaveProps> = ({ color, boxHeight }) => {
       </WrapperBottom>
       <WrapperBox
         style={{ backgroundColor: color, height: boxHeight }}
-      ></WrapperBox>
+      >{children}</WrapperBox>
       <WrapperTop>
         <svg viewBox="0 0 1792 335" xmlns="http://www.w3.org/2000/svg">
           <path

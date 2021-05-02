@@ -1,3 +1,4 @@
+import { SiDotNet } from 'react-icons/si'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import TechIcon from '../components/TechIcon'
@@ -25,10 +26,14 @@ const Test: React.FC = () => {
 
       <Card
         tag="Projeto"
-        title={data.portifolio[0].name}
-        description={data.portifolio[0].description} techs={data.portifolio[0].techs} link={data.portifolio[0].link}
+        title={data.portifolio[3].name}
+        description={data.portifolio[3].description}
+        techs={data.portifolio[3].techs}
+        link={data.portifolio[3].link}
         image={MockupSushiBowl}
       />
+
+      <SiDotNet />
     </div>
   )
 }

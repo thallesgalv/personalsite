@@ -1,3 +1,4 @@
+import Tilt from 'react-tilt'
 import Button from '../Button'
 import TechIcon from '../TechIcon'
 import { Wrapper, Container, ContainerIcons } from './styles'
@@ -29,6 +30,7 @@ const Card: React.FC<CardProps> = ({
         <ContainerIcons>
           {[...techs.split(',')].map(i => (
             <TechIcon
+              key={i}
               name={i}
               color={data.techs.find(t => t.name === i)?.color}
               eng={data.techs.find(t => t.name === i)?.english}
@@ -39,11 +41,19 @@ const Card: React.FC<CardProps> = ({
         </ContainerIcons>
         <Button link={link}>Veja o projeto</Button>
       </Container>
-      <img src={image} />
+      <Tilt
+        className="Tilt"
+        options={{
+          max: 20,
+          scale: 1.075
+        }}
+      >
+        <div className="Tilt-inner">
+          <img src={image} />
+        </div>
+      </Tilt>
     </Wrapper>
   )
 }
 
 export default Card
-
-// <TechIcon name="i" color="blue" eng="i" icon={data.techs[0].icon} />

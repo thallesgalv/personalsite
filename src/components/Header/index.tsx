@@ -6,18 +6,24 @@ import FlagBrazil from '../../assets/flagBrazil.png'
 import FlagUsa from '../../assets/flagUsa.png'
 import { SiLinkedin, SiGithub } from 'react-icons/si'
 import Button from '../Button'
+import useMatchMedia from '../../hooks/useMatchMedia'
 
 const Header: React.FC = () => {
   const { english, setEnglish } = useEnglish()
 
+  const tabletBreakpoint: string = useMatchMedia('(max-width: 768px')
+  const mobileBreakpoint: string = useMatchMedia('(min-width: 767px')
+
   return (
     <StyledHeader>
       <ContainerLogo>
-        <Link href="/">
-          <a>
-            <Logo nights />
-          </a>
-        </Link>
+        {mobileBreakpoint && (
+          <Link href="/">
+            <a>
+              <Logo nights />
+            </a>
+          </Link>
+        )}
         <ContainerButton>
           <button
             onClick={() => setEnglish(false)}
@@ -49,8 +55,14 @@ const Header: React.FC = () => {
       </ContainerLogo>
 
       <nav>
-        <Link href="/">{english ? 'Portifolio' : 'Portifólio'}</Link>
-        <Link href="/">{english ? 'About' : 'Sobre'}</Link>
+        <ul>
+          <li>
+            <Link href="/">{english ? 'Portifolio' : 'Portifólio'}</Link>{' '}
+          </li>
+          <li>
+            <Link href="/">{english ? 'About' : 'Sobre'}</Link>
+          </li>
+        </ul>
       </nav>
 
       <nav>
@@ -67,11 +79,13 @@ const Header: React.FC = () => {
             <SiGithub />
           </a>
         </Link>
-        <Link href="">
-          <Button small>
-            {english ? "Let's work together?" : 'Vamos trabalhar juntos?'}
-          </Button>
-        </Link>
+        {mobileBreakpoint && (
+          <Link href="">
+            <Button small>
+              {english ? "Let's work together?" : 'Vamos trabalhar juntos?'}
+            </Button>
+          </Link>
+        )}
       </nav>
     </StyledHeader>
   )

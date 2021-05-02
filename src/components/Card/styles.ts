@@ -1,21 +1,45 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
 
->img {
-  margin-left: -80px;
-  margin-top: 400px;
-}
+  &:nth-child(odd) {
+    justify-content: flex-start;
+  }
+  &:nth-child(even) {
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .Tilt {
+    img {
+      margin-left: -2rem;
+      top: 150px;
+
+      @media (max-width: 768px) {
+        margin-left: unset;
+        top: unset;
+        margin: 1rem 0;
+      }
+    }
+  }
 `
 export const Container = styled.div`
-  width: 35%;
+  width: max(35%, 600px);
   border: ${({ theme }) => theme.rem(5)} solid
     ${({ theme }) => theme.colors.text};
   border-radius: ${({ theme }) => theme.rem(theme.radius)};
   padding: 1.5rem;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 
   > span {
     font-weight: 200;
@@ -33,6 +57,11 @@ export const ContainerIcons = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 1rem 0;
+  flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    gap: 1rem;
+  }
 `

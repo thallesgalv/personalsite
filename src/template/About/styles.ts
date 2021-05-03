@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   h1 {
     margin-top: 0;
+
+    @media (max-width: 767px) {
+      text-align: center;
+      margin-top: 2rem;
+    }
   }
 `
 
@@ -14,9 +19,15 @@ export const Box = styled.div`
   gap: 2rem;
   padding: 0 4rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 0 1rem;
+    gap: 0;
   }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
 `
 
 export const ImageContainer = styled.div`
@@ -25,8 +36,14 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   > img {
     position: absolute;
+
+    @media (max-width: 767px) {
+      position: unset;
+      margin-top: 2rem;
+    }
   }
 `
 

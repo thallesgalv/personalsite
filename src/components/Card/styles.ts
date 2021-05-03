@@ -47,6 +47,8 @@ export const Container = styled.div`
     ${({ theme }) => theme.colors.text};
   border-radius: ${({ theme }) => theme.rem(theme.radius)};
   padding: 1.5rem;
+  background-color: rgba(255,255,255,.05);
+  /*Ver depois*/
 
   @media (max-width: 767px) {
     width: 100%;

@@ -6,6 +6,7 @@ import { useEnglish } from '../contexts/EnglishContext'
 import dt from '../data/techs.json'
 import data from '../data/portifolio.json'
 import MockupSushiBowl from '../assets/mockupSushiBowl.png'
+import SectionHeading from '../components/SectionHeading'
 
 const Test: React.FC = () => {
   const { english } = useEnglish()
@@ -17,23 +18,12 @@ const Test: React.FC = () => {
       {/* <img src={`data:image/svg+xml;utf8,${image}`}></img> */}
       {/* <p>{data.techs[1].name}</p> */}
       <TechIcon
-        name={dt.techs[0].name}
-        color={dt.techs[0].color}
-        eng={english && dt.techs[0].english}
-        icon={dt.techs[0].icon}
-        small
+        name={dt.techs[22].name}
+        color={dt.techs[22].color}
+        eng={english && dt.techs[22].english}
+        icon={dt.techs[22].icon}
       />
 
-      <Card
-        tag="Projeto"
-        title={data.portifolio[3].name}
-        description={data.portifolio[3].description}
-        techs={data.portifolio[3].techs}
-        link={data.portifolio[3].link}
-        image={MockupSushiBowl}
-      />
-
-      <SiDotNet />
     </div>
   )
 }

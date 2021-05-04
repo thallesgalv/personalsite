@@ -7,23 +7,29 @@ import { Wrapper, Container, ContainerIcons } from './styles'
 import data from '../../data/techs.json'
 
 interface CardProps {
-  tag: string
+  tag?: string
   title: string
+  titleEng?: string
   description: string
-  eng: string
+  descriptionEng: string
   techs: string
-  link: string
+  link?: string
   image: string
+  period?: string
+  periodEng?: string
 }
 
 const Card: React.FC<CardProps> = ({
   tag,
   title,
+  titleEng,
   description,
-  eng,
+  descriptionEng,
   techs,
   link,
   image,
+  period,
+  periodEng
 }) => {
   const { english } = useEnglish()
   const target = useRef(null)
@@ -48,21 +54,22 @@ const Card: React.FC<CardProps> = ({
     <Wrapper ref={target}>
       <Container>
         <span>{tag}</span>
-        <h1>{title}</h1>
-        <p>{english ? eng : description}</p>
+        <h1>{english ? titleEng : title}</h1>
+        <span>{period && english ? periodEng : period }</span>
+        <p>{english ? descriptionEng : description}</p>
         <ContainerIcons>
           {[...techs.split(',')].map(i => (
             <TechIcon
-              key={i}
+              key={data.techs.find(t => t.title === i)?.id}
               name={i}
-              color={data.techs.find(t => t.name === i)?.color}
-              eng={data.techs.find(t => t.name === i)?.english}
-              icon={data.techs.find(t => t.name === i)?.icon}
+              color={data.techs.find(t => t.title === i)?.color}
+              eng={data.techs.find(t => t.title === i)?.titleEng}
+              icon={data.techs.find(t => t.title === i)?.icon}
               small
             />
           ))}
         </ContainerIcons>
-        <Button link={link}>Veja o projeto</Button>
+        {link && <Button link={link}>Veja o projeto</Button>}
       </Container>
       <Tilt
         className="Tilt"
@@ -72,7 +79,7 @@ const Card: React.FC<CardProps> = ({
         }}
       >
         <div className="Tilt-inner">
-          <img src={image} />
+          <img src={image} alt={english ? titleEng : title}/>
         </div>
       </Tilt>
     </Wrapper>

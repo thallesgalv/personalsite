@@ -56,7 +56,7 @@ export const Container = styled.div`
 
   > span {
     font-weight: 200;
-    text-transform: uppercase;
+    margin: 1rem 0;
   }
 
   > h1 {

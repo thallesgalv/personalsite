@@ -4,6 +4,7 @@ import { Box, Container, Content, ImageContainer } from './styles'
 import Pic from '../../assets/placeholder.png'
 import Skills from '../Skills'
 import { useEnglish } from '../../contexts/EnglishContext'
+import Experience from '../Experience'
 
 const About: React.FC = () => {
   const {english} = useEnglish()
@@ -32,6 +33,7 @@ const About: React.FC = () => {
         </Box>
       </Wave>
       <Skills />
+      <Experience />
     </Container>
   )
 }

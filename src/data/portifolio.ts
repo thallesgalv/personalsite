@@ -28,7 +28,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'ReactJs,TypeScript,Styled-Components,Adobe XD',
       link: 'https://thallesgalv.github.io/scary-pages/',
-      image: require('../assets/MockupScaryPages.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     },
     {
       id: '3',
@@ -38,7 +38,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,GreenSock,Gulp',
       link: 'https://laccavilarica.com.br/',
-      image: require('../assets/MockupLacca.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     },
     {
       id: '4',
@@ -48,7 +48,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,.Net',
       link: 'http://www.atmaprotecao.com.br/',
-      image: require('../assets/MockupAtma.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     },
     {
       id: '5',
@@ -58,7 +58,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,.Net',
       link: 'http://edexincorporadora.com.br/',
-      image: require('../assets/MockupEdex.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     },
     {
       id: '6',
@@ -68,7 +68,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,.Net',
       link: 'https://www.mira.com.br/',
-      image: require('../assets/MockupMira.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     },
     {
       id: '7',
@@ -78,7 +78,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript',
       link: 'http://v6.souintegracao.com.br/',
-      image: require('../assets/MockupIntegracao.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     }
   ]
 }

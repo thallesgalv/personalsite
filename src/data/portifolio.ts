@@ -18,7 +18,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'ReactJs,Next.js,TypeScript,Styled-Components,Figma',
       link: '',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupTMobile.png').default
     },
     {
       id: '2',
@@ -28,7 +28,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'ReactJs,TypeScript,Styled-Components,Adobe XD',
       link: 'https://thallesgalv.github.io/scary-pages/',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupScaryPages.png').default
     },
     {
       id: '3',
@@ -38,7 +38,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,GreenSock,Gulp',
       link: 'https://laccavilarica.com.br/',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupLacca.png').default
     },
     {
       id: '4',
@@ -48,7 +48,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,.Net',
       link: 'http://www.atmaprotecao.com.br/',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupAtma.png').default
     },
     {
       id: '5',
@@ -58,7 +58,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,.Net',
       link: 'http://edexincorporadora.com.br/',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupEdex.png').default
     },
     {
       id: '6',
@@ -68,7 +68,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript,.Net',
       link: 'https://www.mira.com.br/',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupMira.png').default
     },
     {
       id: '7',
@@ -78,7 +78,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'HTML 5,CSS 3,JavaScript',
       link: 'http://v6.souintegracao.com.br/',
-      image: require('../assets/mockupSushiBowl.png').default
+      image: require('../assets/mockupIntegracao.png').default
     }
   ]
 }

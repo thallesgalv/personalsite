@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { useEnglish } from '../../contexts/EnglishContext'
 import { Container, Wrapper } from './styles'
 
@@ -25,7 +25,9 @@ const TechIcon: React.FC<TechIconProps> = ({
   const { english } = useEnglish()
   const placeIcon = useRef(null)
 
-  placeIcon?.current?.insertAdjacentHTML('afterbegin', icon)
+  useEffect(() => {
+    placeIcon?.current?.insertAdjacentHTML('afterbegin', icon)
+  }, [])
   return (
     <Wrapper small={small} color={color} title={english ? titleEng : title}>
       <Container color={color} small={small} ref={placeIcon} />

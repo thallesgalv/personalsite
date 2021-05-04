@@ -25,14 +25,10 @@ const TechIcon: React.FC<TechIconProps> = ({
   const { english } = useEnglish()
   const placeIcon = useRef(null)
 
-  placeIcon?.current?.insertAdjacentHTML(
-    'afterbegin', icon
-  )
+  placeIcon?.current?.insertAdjacentHTML('afterbegin', icon)
   return (
     <Wrapper small={small} color={color} title={english ? titleEng : title}>
-      <Container color={color} small={small} ref={placeIcon}>
-        {/* <img src={`data:image/svg+xml;utf8,${icon}`}></img> */}
-      </Container>
+      <Container color={color} small={small} ref={placeIcon} />
       <p>{english ? titleEng : title}</p>
     </Wrapper>
   )

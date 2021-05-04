@@ -1,15 +1,15 @@
 import Card from '../../components/Card'
 import SubHeadline from '../../components/SubHeadline'
 import { Container, ContainerCards } from './styles'
-import data from '../../data/portifolio.json'
-import MockupSushiBowl from '../../assets/mockupSushiBowl.png'
-import MockupTMobile from '../../assets/mockupTMobile.png'
-import MockupScaryPages from '../../assets/mockupScaryPages.png'
-import MockupLacca from '../../assets/mockupLacca.png'
-import MockupAtma from '../../assets/mockupAtma.png'
-import MockupEdex from '../../assets/MockupEdex.png'
-import MockupMira from '../../assets/mockupMira.png'
-import MockupIntegracao from '../../assets/mockupIntegracao.png'
+// import data from '../../data/portifolio.json'
+// import MockupSushiBowl from '../../assets/mockupSushiBowl.png'
+// import MockupTMobile from '../../assets/mockupTMobile.png'
+// import MockupScaryPages from '../../assets/mockupScaryPages.png'
+// import MockupLacca from '../../assets/mockupLacca.png'
+// import MockupAtma from '../../assets/mockupAtma.png'
+// import MockupEdex from '../../assets/MockupEdex.png'
+// import MockupMira from '../../assets/mockupMira.png'
+// import MockupIntegracao from '../../assets/mockupIntegracao.png'
 
 const Portifolio: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const Portifolio: React.FC = () => {
       <SubHeadline>Portifólio</SubHeadline>
       <p>Conheça um pouco sobre alguns dos projetos que já realizei:</p>
 
-      <ContainerCards>
+      {/* <ContainerCards>
         <Card
           tag="PROJETO"
           title={data.portifolio[0].title}
@@ -90,7 +90,7 @@ const Portifolio: React.FC = () => {
           link={data.portifolio[7].link}
           image={MockupIntegracao}
         />
-      </ContainerCards>
+      </ContainerCards> */}
     </Container>
   )
 }

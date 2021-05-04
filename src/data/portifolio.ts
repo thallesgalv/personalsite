@@ -18,7 +18,7 @@ const data = {
       descriptionEng: 'Texto em inglês.',
       techs: 'ReactJs,Next.js,TypeScript,Styled-Components,Figma',
       link: '',
-      image: require('../assets/MockupTMobile.png').default
+      image: require('../assets/mockupSushiBowl.png').default
     },
     {
       id: '2',

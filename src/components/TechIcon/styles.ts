@@ -30,7 +30,7 @@ export const Container = styled.div<TechIconCssProps>`
   border-radius: ${({ theme }) => theme.rem(theme.radius)};
   margin-bottom: 10px;
 
-  > img {
-    width: ${({ small }) => (small ? '2.5rem' : '4.68rem')};
+   svg {
+    font-size: ${({ small }) => (small ? '2.5rem' : '4.68rem')} !important;
   }
 `

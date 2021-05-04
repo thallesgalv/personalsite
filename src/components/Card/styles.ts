@@ -69,7 +69,7 @@ export const ContainerIcons = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
   margin: 1rem 0;
   flex-wrap: wrap;

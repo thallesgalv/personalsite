@@ -37,7 +37,7 @@ export const Grid = styled.div`
     row-gap: 1rem;
   }
 
-  img {
+  svg {
     transition: all 0.3s ease-in-out;
 
     &:hover {

@@ -1,6 +1,6 @@
 import { Container, FlexBox, FlexItem, Grid, SubGrid } from './styles'
 import SectionHeading from '../../components/SectionHeading'
-import data from '../../data/techs.json'
+import data from '../../data/techs'
 import TechIcon from '../../components/TechIcon'
 import { useEnglish } from '../../contexts/EnglishContext'
 

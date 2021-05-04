@@ -4,7 +4,7 @@ import { useEnglish } from '../../contexts/EnglishContext'
 import Button from '../Button'
 import TechIcon from '../TechIcon'
 import { Wrapper, Container, ContainerIcons } from './styles'
-import data from '../../data/techs.json'
+import data from '../../data/techs'
 
 interface CardProps {
   tag?: string

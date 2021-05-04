@@ -1,4 +1,4 @@
-const alt = {
+const data = {
   experience: [
     {
       id: '0',
@@ -16,4 +16,4 @@ const alt = {
   ]
 }
 
-export default alt
+export default data

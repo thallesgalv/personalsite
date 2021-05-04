@@ -2,10 +2,9 @@ import { Container } from './styles'
 import { useEnglish } from '../../contexts/EnglishContext'
 import SectionHeading from '../../components/SectionHeading'
 import Wave from '../../components/Wave'
-// import data from '../../data/experience.json'
-import data from '../../data/alt'
+import data from '../../data/experience'
 import Card from '../../components/Card'
-import LogoEGO from '../../assets/LogoEGO.png'
+
 
 const Experience: React.FC = () => {
   const { english } = useEnglish()

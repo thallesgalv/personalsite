@@ -18,6 +18,7 @@ const Skills: React.FC = () => {
             .filter(tech => tech.category === 'industryKnowledge')
             .map(i => (
               <TechIcon
+                key={i.id}
                 title={i.title}
                 color={i.color}
                 titleEng={i.titleEng}
@@ -37,6 +38,7 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'experient')
                 .map(i => (
                   <TechIcon
+                    key={i.id}
                     title={i.title}
                     color={i.color}
                     titleEng={i.titleEng}
@@ -53,6 +55,7 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'improving')
                 .map(i => (
                   <TechIcon
+                    key={i.id}
                     title={i.title}
                     color={i.color}
                     titleEng={i.titleEng}
@@ -71,6 +74,7 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'nextSteps')
                 .map(i => (
                   <TechIcon
+                    key={i.id}
                     title={i.title}
                     color={i.color}
                     titleEng={i.titleEng}
@@ -87,6 +91,7 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'briefContact')
                 .map(i => (
                   <TechIcon
+                    key={i.id}
                     title={i.title}
                     color={i.color}
                     titleEng={i.titleEng}
@@ -103,6 +108,7 @@ const Skills: React.FC = () => {
             .filter(tech => tech.category === 'softSkills')
             .map(i => (
               <TechIcon
+                key={i.id}
                 title={i.title}
                 color={i.color}
                 titleEng={i.titleEng}

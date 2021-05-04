@@ -8,6 +8,7 @@ import data from '../../data/techs'
 
 interface CardProps {
   tag?: string
+  tagEng?: string
   title: string
   titleEng?: string
   description: string
@@ -21,6 +22,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({
   tag,
+  tagEng,
   title,
   titleEng,
   description,
@@ -53,7 +55,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <Wrapper ref={target}>
       <Container>
-        <span>{tag}</span>
+        <span>{tag && english ? tagEng : tag} </span>
         <h1>{english ? titleEng : title}</h1>
         <span>{period && english ? periodEng : period }</span>
         <p>{english ? descriptionEng : description}</p>

@@ -17,7 +17,9 @@ const Experience: React.FC = () => {
           {data &&
             data.experience.map(workPlace => (
               <Card
+                key={workPlace.id}
                 tag={workPlace.tag}
+                tagEng={workPlace.tag}
                 title={workPlace.title}
                 titleEng={workPlace.titleEng}
                 description={workPlace.description}

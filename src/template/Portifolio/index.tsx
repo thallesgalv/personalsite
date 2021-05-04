@@ -14,7 +14,9 @@ const Portifolio: React.FC = () => {
       <ContainerCards>
         {data.portifolio.map(item => (
           <Card
+            key={item.id}
             tag={english ? 'PROJECT' : 'PROJETO'}
+            tagEng={english ? 'PROJECT' : 'PROJETO'}
             title={item.title}
             titleEng={item.title}
             description={item.description}

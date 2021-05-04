@@ -55,7 +55,7 @@ const data = {
       category: 'improving'
     },
     {
-      id: '5',
+      id: '6',
       title: 'Next.js',
       titleEng: 'Next.js',
       icon:
@@ -64,7 +64,7 @@ const data = {
       category: 'improving'
     },
     {
-      id: '6',
+      id: '7',
       title: 'Figma',
       titleEng: 'Figma',
       icon:
@@ -73,7 +73,7 @@ const data = {
       category: 'improving'
     },
     {
-      id: '7',
+      id: '8',
       title: 'Adobe XD',
       titleEng: 'Adobe XD',
       icon:
@@ -82,7 +82,7 @@ const data = {
       category: 'improving'
     },
     {
-      id: '8',
+      id: '9',
       title: 'Redux',
       titleEng: 'Redux',
       icon:
@@ -91,7 +91,7 @@ const data = {
       category: 'nextSteps'
     },
     {
-      id: '9',
+      id: '10',
       title: 'ReactNative',
       titleEng: 'ReactNative',
       icon:
@@ -100,7 +100,7 @@ const data = {
       category: 'nextSteps'
     },
     {
-      id: '10',
+      id: '11',
       title: 'Jest',
       titleEng: 'Jest',
       icon:
@@ -109,7 +109,7 @@ const data = {
       category: 'nextSteps'
     },
     {
-      id: '11',
+      id: '12',
       title: 'Vue.js',
       titleEng: 'Vue.js',
       icon:
@@ -118,7 +118,7 @@ const data = {
       category: 'nextSteps'
     },
     {
-      id: '12',
+      id: '13',
       title: 'Angular',
       titleEng: 'Angular',
       icon:
@@ -127,7 +127,7 @@ const data = {
       category: 'nextSteps'
     },
     {
-      id: '13',
+      id: '14',
       title: 'Node.js',
       titleEng: 'Node.js',
       icon:
@@ -136,7 +136,7 @@ const data = {
       category: 'nextSteps'
     },
     {
-      id: '14',
+      id: '15',
       title: 'WordPress',
       titleEng: 'WordPress',
       icon:
@@ -145,7 +145,7 @@ const data = {
       category: 'briefContact'
     },
     {
-      id: '15',
+      id: '16',
       title: 'PHP',
       titleEng: 'PHP',
       icon:
@@ -154,7 +154,7 @@ const data = {
       category: 'briefContact'
     },
     {
-      id: '16',
+      id: '17',
       title: 'SQL Server',
       titleEng: 'SQL Server',
       icon:
@@ -163,7 +163,7 @@ const data = {
       category: 'briefContact'
     },
     {
-      id: '17',
+      id: '18',
       title: 'Photoshop',
       titleEng: 'Photoshop',
       icon:
@@ -172,7 +172,7 @@ const data = {
       category: 'briefContact'
     },
     {
-      id: '18',
+      id: '19',
       title: 'Illustrator',
       titleEng: 'Illustrator',
       icon:
@@ -181,7 +181,7 @@ const data = {
       category: 'briefContact'
     },
     {
-      id: '19',
+      id: '20',
       title: 'Java',
       titleEng: 'Java',
       icon:
@@ -190,7 +190,7 @@ const data = {
       category: 'briefContact'
     },
     {
-      id: '20',
+      id: '21',
       title: 'Desenvolvimento Front-End',
       titleEng: 'Front-end Development',
       icon:
@@ -199,7 +199,7 @@ const data = {
       category: 'industryKnowledge'
     },
     {
-      id: '21',
+      id: '22',
       title: 'Metodologias\nÁgeis',
       titleEng: 'Agile Methodologies\r\n',
       icon:
@@ -208,7 +208,7 @@ const data = {
       category: 'industryKnowledge'
     },
     {
-      id: '22',
+      id: '23',
       title: 'UX/UI Design',
       titleEng: 'UX/UI Design',
       icon:
@@ -217,7 +217,7 @@ const data = {
       category: 'industryKnowledge'
     },
     {
-      id: '23',
+      id: '24',
       title: 'Copywriting',
       titleEng: 'Copywriting',
       icon:
@@ -226,7 +226,7 @@ const data = {
       category: 'industryKnowledge'
     },
     {
-      id: '24',
+      id: '25',
       title: 'Newswriting',
       titleEng: 'Newswriting',
       icon:
@@ -235,7 +235,7 @@ const data = {
       category: 'industryKnowledge'
     },
     {
-      id: '25',
+      id: '26',
       title: 'Comunicação',
       titleEng: 'Communication',
       icon:
@@ -244,7 +244,7 @@ const data = {
       category: 'softSkills'
     },
     {
-      id: '26',
+      id: '27',
       title: 'Redação',
       titleEng: 'Writing',
       icon:
@@ -253,7 +253,7 @@ const data = {
       category: 'softSkills'
     },
     {
-      id: '27',
+      id: '28',
       title: 'Trabalho em Equipe',
       titleEng: 'Teamwork',
       icon:
@@ -262,7 +262,7 @@ const data = {
       category: 'softSkills'
     },
     {
-      id: '28',
+      id: '29',
       title: 'Proatividade',
       titleEng: 'Proactivity',
       icon:
@@ -271,7 +271,7 @@ const data = {
       category: 'softSkills'
     },
     {
-      id: '29',
+      id: '30',
       title: 'Solution Driven',
       titleEng: 'Solution Driven',
       icon:
@@ -280,7 +280,7 @@ const data = {
       category: 'softSkills'
     },
     {
-      id: '30',
+      id: '31',
       title: 'Gerenciamento de Crise',
       titleEng: 'Crisis Management',
       icon:
@@ -289,7 +289,7 @@ const data = {
       category: 'softSkills'
     },
     {
-      id: '31',
+      id: '32',
       title: 'Styled-Components',
       titleEng: 'Styled-Components',
       icon:
@@ -298,7 +298,7 @@ const data = {
       category: 'none'
     },
     {
-      id: '32',
+      id: '33',
       title: 'GreenSock',
       titleEng: 'GreenSock',
       icon:
@@ -307,7 +307,7 @@ const data = {
       category: 'none'
     },
     {
-      id: '33',
+      id: '34',
       title: 'Gulp',
       titleEng: 'Gulp',
       icon:
@@ -316,7 +316,7 @@ const data = {
       category: 'none'
     },
     {
-      id: '34',
+      id: '35',
       title: '.Net',
       titleEng: '.Net',
       icon:

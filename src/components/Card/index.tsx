@@ -61,9 +61,9 @@ const Card: React.FC<CardProps> = ({
           {[...techs.split(',')].map(i => (
             <TechIcon
               key={data.techs.find(t => t.title === i)?.id}
-              name={i}
+              title={i}
               color={data.techs.find(t => t.title === i)?.color}
-              eng={data.techs.find(t => t.title === i)?.titleEng}
+              titleEng={data.techs.find(t => t.title === i)?.titleEng}
               icon={data.techs.find(t => t.title === i)?.icon}
               small
             />

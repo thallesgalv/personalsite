@@ -18,9 +18,9 @@ const Skills: React.FC = () => {
             .filter(tech => tech.category === 'industryKnowledge')
             .map(i => (
               <TechIcon
-                name={i.name}
+                title={i.title}
                 color={i.color}
-                eng={i.english}
+                titleEng={i.titleEng}
                 icon={i.icon}
               />
             ))}
@@ -37,9 +37,9 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'experient')
                 .map(i => (
                   <TechIcon
-                    name={i.name}
+                    title={i.title}
                     color={i.color}
-                    eng={i.english}
+                    titleEng={i.titleEng}
                     icon={i.icon}
                   />
                 ))}
@@ -53,9 +53,9 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'improving')
                 .map(i => (
                   <TechIcon
-                    name={i.name}
+                    title={i.title}
                     color={i.color}
-                    eng={i.english}
+                    titleEng={i.titleEng}
                     icon={i.icon}
                   />
                 ))}
@@ -71,9 +71,9 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'nextSteps')
                 .map(i => (
                   <TechIcon
-                    name={i.name}
+                    title={i.title}
                     color={i.color}
-                    eng={i.english}
+                    titleEng={i.titleEng}
                     icon={i.icon}
                   />
                 ))}
@@ -87,9 +87,9 @@ const Skills: React.FC = () => {
                 .filter(tech => tech.category === 'briefContact')
                 .map(i => (
                   <TechIcon
-                    name={i.name}
+                    title={i.title}
                     color={i.color}
-                    eng={i.english}
+                    titleEng={i.titleEng}
                     icon={i.icon}
                   />
                 ))}
@@ -103,9 +103,9 @@ const Skills: React.FC = () => {
             .filter(tech => tech.category === 'softSkills')
             .map(i => (
               <TechIcon
-                name={i.name}
+                title={i.title}
                 color={i.color}
-                eng={i.english}
+                titleEng={i.titleEng}
                 icon={i.icon}
               />
             ))}

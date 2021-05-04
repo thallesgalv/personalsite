@@ -2,8 +2,8 @@ import { useEnglish } from '../../contexts/EnglishContext'
 import { Container, Wrapper } from './styles'
 
 interface TechIconProps {
-  name: string
-  eng: string
+  title: string
+  titleEng: string
   icon: string
   color: string
   small?: boolean
@@ -15,19 +15,19 @@ export interface TechIconCssProps {
 }
 
 const TechIcon: React.FC<TechIconProps> = ({
-  name,
-  eng,
+  title,
+  titleEng,
   icon,
   color,
   small
 }) => {
   const { english } = useEnglish()
   return (
-    <Wrapper small={small} color={color} title={english ? eng : name}>
+    <Wrapper small={small} color={color} title={english ? titleEng : title}>
       <Container color={color} small={small}>
         <img src={`data:image/svg+xml;utf8,${icon}`}></img>
       </Container>
-      <p>{english ? eng : name}</p>
+      <p>{english ? titleEng : title}</p>
     </Wrapper>
   )
 }

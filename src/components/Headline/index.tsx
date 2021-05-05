@@ -1,7 +1,9 @@
 import { StyledHeadline, RotateContainer, Heading, Description } from './styles'
 import { useState, useRef, useEffect } from 'react'
+import { useEnglish } from '../../contexts/EnglishContext'
 
 const Headline: React.FC = () => {
+  const { english } = useEnglish()
   const [axisY, setAxisY] = useState(0)
   const [windowWidth, setwindowWidth] = useState(null)
   const move = useRef<HTMLDivElement>(null)
@@ -34,19 +36,31 @@ const Headline: React.FC = () => {
 
   return (
     <StyledHeadline>
-      <Heading ref={mainHeading}>Vamos desenvolver</Heading>
+      <Heading ref={mainHeading}>
+        {english ? "Let's develop" : 'Vamos desenvolver'}
+      </Heading>
       <RotateContainer>
         <div ref={move}>
-          <Heading>o seu site</Heading>
-          <Heading>a sua aplicação web</Heading>
-          <Heading>o seu novo projeto</Heading>
-          <Heading>a sua marca</Heading>
-          <Heading>a sua interface</Heading>
+          <Heading>{english ? 'your website' : 'o seu site'}</Heading>
+          <Heading>
+            {english ? 'your web application' : 'a sua aplicação web'}
+          </Heading>
+          <Heading>{english ? 'your project' : 'o seu novo projeto'}</Heading>
+          <Heading>{english ? 'your brand' : 'a sua marca'}</Heading>
+          <Heading>{english ? 'your interface' : 'a sua interface'}</Heading>
         </div>
       </RotateContainer>
       <Description>
-        <p>Me chamo Thalles Galvão e sou Desenvolvedor Front-End.</p>
-        <p>Conheça mais sobre mim e meu trabalho abaixo.</p>
+        <p>
+          {english
+            ? "I'm Thalles Galvão, Front-End Developer."
+            : 'Me chamo Thalles Galvão e sou Desenvolvedor Front-End.'}
+        </p>
+        <p>
+          {english
+            ? 'Find out more about my work below.'
+            : 'Conheça mais sobre mim e meu trabalho abaixo.'}
+        </p>
       </Description>
     </StyledHeadline>
   )

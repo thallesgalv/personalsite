@@ -8,8 +8,12 @@ const Portifolio: React.FC = () => {
   const { english } = useEnglish()
   return (
     <Container>
-      <SubHeadline>Portifólio</SubHeadline>
-      <p>Conheça um pouco sobre alguns dos projetos que já realizei:</p>
+      <SubHeadline>{english ? 'Portifolio' : 'Portifólio'}</SubHeadline>
+      <p>
+        {english
+          ? 'See a little about some of my projects:'
+          : 'Conheça um pouco sobre alguns dos projetos que já realizei:'}
+      </p>
 
       <ContainerCards>
         {data.portifolio.map(item => (

@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({
             />
           ))}
         </ContainerIcons>
-        {link && <Button link={link}>Veja o projeto</Button>}
+        {link && <Button link={link}>{english ? 'See the project' : 'Veja o projeto' }</Button>}
       </Container>
       <Tilt
         className="Tilt"

@@ -5,9 +5,11 @@ import Pic from '../../assets/placeholder.png'
 import Wave from '../../components/Wave'
 import useMatchMedia from '../../hooks/useMatchMedia'
 import Logo from '../../components/Logo'
+import { useEnglish } from '../../contexts/EnglishContext'
 
 const Hero: React.FC = () => {
   const breakPointDesktop: string = useMatchMedia('(max-width: 1100px')
+  const { english } = useEnglish()
   return (
     <>
       <Container>
@@ -16,8 +18,8 @@ const Hero: React.FC = () => {
           <Logo nights />
           <Headline />
           <ButtonContainer>
-            <Button secondary>Veja meu portifólio</Button>
-            <Button>Vamos trabalhar juntos?</Button>
+            <Button secondary>{english ? 'Check out my portfolio' : 'Veja meu portifólio'}</Button>
+            <Button>{english ? "Let's work together?" : 'Vamos trabalhar juntos?'}</Button>
           </ButtonContainer>
         </Content>
         {breakPointDesktop && <Wave color="#2F495E" boxHeight={20} />}

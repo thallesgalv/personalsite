@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
       </h3>
       <FlexBox>
         <FlexItem>
-          <h4>Experiente</h4>
+          <h4>{english ? 'Experient' : 'Experiente'}</h4>
           <Grid>
             {data &&
               data.techs
@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
           </Grid>
         </FlexItem>
         <FlexItem>
-          <h4>Aprimorando</h4>
+          <h4>{english ? 'Improving' : 'Aprimorando'}</h4>
           <Grid>
             {data &&
               data.techs
@@ -67,7 +67,7 @@ const Skills: React.FC = () => {
       </FlexBox>
       <FlexBox>
         <FlexItem>
-          <h4>Próximos Passos</h4>
+          <h4>{english ? 'Next Steps' : 'Próximos Passos'}</h4>
           <SubGrid>
             {data &&
               data.techs
@@ -84,7 +84,11 @@ const Skills: React.FC = () => {
           </SubGrid>
         </FlexItem>
         <FlexItem>
-          <h4>Breve Contato</h4>
+          <h4>
+            {english
+              ? 'Brief Contact / Basic knowledge'
+              : 'Breve Contato/Conhecimento básico'}
+          </h4>
           <SubGrid>
             {data &&
               data.techs

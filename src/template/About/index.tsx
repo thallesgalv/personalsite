@@ -5,6 +5,7 @@ import Pic from '../../assets/placeholder.png'
 import Skills from '../Skills'
 import { useEnglish } from '../../contexts/EnglishContext'
 import Experience from '../Experience'
+import Education from '../Education'
 
 const About: React.FC = () => {
   const { english } = useEnglish()
@@ -36,7 +37,7 @@ const About: React.FC = () => {
                   <strong> competências</strong>. Tenho
                   <strong> experiência</strong> no desenvolvimento de produtos
                   digitais e também em copywriting graças à minha
-                  <strong>formação acadêmica</strong>.
+                  <strong> formação acadêmica</strong>.
                 </p>
                 <p>
                   O crescimento profissional é uma prioridade para mim, por isso
@@ -54,6 +55,7 @@ const About: React.FC = () => {
       </Wave>
       <Skills />
       <Experience />
+      <Education />
     </Container>
   )
 }

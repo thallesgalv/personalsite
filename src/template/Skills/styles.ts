@@ -11,7 +11,7 @@ export const Container = styled.div`
     padding: 1rem;
   }
 
-  > h3 {
+  h3 {
     font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(40)}
       'Poppins';
     text-align: center;
@@ -31,6 +31,7 @@ export const Grid = styled.div`
   justify-content: center;
   place-items: start;
   gap: 2.5rem;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 6.25rem);
@@ -60,7 +61,6 @@ export const FlexBox = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
@@ -76,5 +76,19 @@ export const FlexItem = styled.div`
       'Poppins';
     text-align: center;
     margin: 1rem 0;
+  }
+`
+
+export const AnimationContainer = styled.div`
+  opacity: 0;
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translate3d(0, -50px, 0);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 `

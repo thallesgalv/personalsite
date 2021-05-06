@@ -17,6 +17,7 @@ export const StyledHeader = styled.header`
   }
 
   > nav {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,22 +25,31 @@ export const StyledHeader = styled.header`
     gap: 1rem;
 
     ul {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 1rem;
 
-      a {
-        color: ${({ theme }) => theme.colors.text};
+      li {
+        height: 100%;
+
+        a {
+          padding: 0 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          color: ${({ theme }) => theme.colors.text};
+        }
       }
     }
 
-    >a {
+    > a {
       color: ${({ theme }) => theme.colors.text};
       display: flex;
       justify-content: center;
       align-items: center;
-
 
       svg {
         cursor: pointer;
@@ -54,6 +64,7 @@ export const ContainerLogo = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  a,
   svg {
     height: ${({ theme }) => theme.rem(theme.menuHeight - 14)};
   }
@@ -64,8 +75,6 @@ export const ContainerButton = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
 
   button {
     background-color: transparent;

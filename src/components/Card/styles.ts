@@ -60,9 +60,13 @@ export const Container = styled.div`
   }
 
   > h1 {
-    font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(40)}
+    font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(42)}
       'Poppins';
     margin: 1rem 0;
+  }
+
+  p {
+    max-width: 95%;
   }
 `
 export const ContainerIcons = styled.div`

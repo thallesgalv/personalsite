@@ -13,7 +13,7 @@ interface CardProps {
   titleEng?: string
   description: string
   descriptionEng: string
-  techs: string
+  techs?: string
   link?: string
   image: string
   period?: string
@@ -57,21 +57,27 @@ const Card: React.FC<CardProps> = ({
       <Container>
         <span>{tag && english ? tagEng : tag} </span>
         <h1>{english ? titleEng : title}</h1>
-        <span>{period && english ? periodEng : period }</span>
+        <span>{period && english ? periodEng : period}</span>
         <p>{english ? descriptionEng : description}</p>
-        <ContainerIcons>
-          {[...techs.split(',')].map(i => (
-            <TechIcon
-              key={data.techs.find(t => t.title === i)?.id}
-              title={i}
-              color={data.techs.find(t => t.title === i)?.color}
-              titleEng={data.techs.find(t => t.title === i)?.titleEng}
-              icon={data.techs.find(t => t.title === i)?.icon}
-              small
-            />
-          ))}
-        </ContainerIcons>
-        {link && <Button link={link}>{english ? 'See the project' : 'Veja o projeto' }</Button>}
+        {techs && (
+          <ContainerIcons>
+            {[...techs.split(',')].map(i => (
+              <TechIcon
+                key={data.techs.find(t => t.title === i)?.id}
+                title={i}
+                color={data.techs.find(t => t.title === i)?.color}
+                titleEng={data.techs.find(t => t.title === i)?.titleEng}
+                icon={data.techs.find(t => t.title === i)?.icon}
+                small
+              />
+            ))}
+          </ContainerIcons>
+        )}
+        {link && (
+          <Button link={link}>
+            {english ? 'See the project' : 'Veja o projeto'}
+          </Button>
+        )}
       </Container>
       <Tilt
         className="Tilt"
@@ -81,7 +87,7 @@ const Card: React.FC<CardProps> = ({
         }}
       >
         <div className="Tilt-inner">
-          <img src={image} alt={english ? titleEng : title}/>
+          <img src={image} alt={english ? titleEng : title} />
         </div>
       </Tilt>
     </Wrapper>

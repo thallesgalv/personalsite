@@ -11,8 +11,8 @@ interface CardProps {
   tagEng?: string
   title: string
   titleEng?: string
-  description: string
-  descriptionEng: string
+  description?: string
+  descriptionEng?: string
   techs?: string
   link?: string
   image: string
@@ -31,7 +31,8 @@ const Card: React.FC<CardProps> = ({
   link,
   image,
   period,
-  periodEng
+  periodEng,
+  children
 }) => {
   const { english } = useEnglish()
   const target = useRef(null)
@@ -59,6 +60,7 @@ const Card: React.FC<CardProps> = ({
         <h1>{english ? titleEng : title}</h1>
         <span>{period && english ? periodEng : period}</span>
         <p>{english ? descriptionEng : description}</p>
+        <p>{children}</p>
         {techs && (
           <ContainerIcons>
             {[...techs.split(',')].map(i => (

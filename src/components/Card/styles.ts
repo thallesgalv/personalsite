@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   margin: 4rem 0;
 
   opacity: 0;
-  transition: .6s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:nth-child(odd) {
     justify-content: flex-start;
@@ -47,7 +47,7 @@ export const Container = styled.div`
     ${({ theme }) => theme.colors.text};
   border-radius: ${({ theme }) => theme.rem(theme.radius)};
   padding: 1.5rem;
-  background-color: rgba(255,255,255,.05);
+  background-color: rgba(255, 255, 255, 0.05);
   /*Ver depois*/
 
   @media (max-width: 767px) {
@@ -67,6 +67,19 @@ export const Container = styled.div`
 
   p {
     max-width: 95%;
+  }
+
+  ul {
+    padding: 2rem;
+    li {
+      list-style: square;
+    }
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors.secondary};
+    text-decoration: underline;
+    display: inline-block;
   }
 `
 export const ContainerIcons = styled.div`

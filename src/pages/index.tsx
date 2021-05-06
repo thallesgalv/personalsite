@@ -16,9 +16,9 @@ const Home: React.FC = () => {
       </Head>
       <Header />
       <main>
-        {/* <Hero />
+        <Hero />
         {breakPointDesktop && <Shape />}
-        <Portifolio /> */}
+        <Portifolio />
         <About />
       </main>
     </>

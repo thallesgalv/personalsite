@@ -3,8 +3,8 @@ import { useEnglish } from '../../contexts/EnglishContext'
 import SectionHeading from '../../components/SectionHeading'
 import Wave from '../../components/Wave'
 import Card from '../../components/Card'
-import LogoOrigamid from '../../assets/LogoOrigamid.png'
-import LogoRocketSeat from '../../assets/LogoRocketSeat.png'
+import LogoOrigamid from '../../assets/logoOrigamid.png'
+import LogoRocketSeat from '../../assets/logoRocketSeat.png'
 import LogoMTE from '../../assets/logoMTE.png'
 
 const LicencesAndCertifications: React.FC = () => {
@@ -22,7 +22,7 @@ const LicencesAndCertifications: React.FC = () => {
             titleEng="Origamid"
             tag="Cursos"
             tagEng="Courses"
-            image="LogoOrigamid"
+            image={LogoOrigamid}
           >
             {english ? (
               <div>
@@ -151,7 +151,7 @@ const LicencesAndCertifications: React.FC = () => {
             titleEng="Rocketseat"
             tag="Cursos"
             tagEng="Courses"
-            image="LogoRocketSeat"
+            image={LogoRocketSeat}
           >
             {english ? (
               <div>
@@ -205,7 +205,6 @@ const LicencesAndCertifications: React.FC = () => {
             )}
           </Card>
         </ContainerCards>
-        <img src={LogoMTE} />
       </Wave>
     </Container>
   )

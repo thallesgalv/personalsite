@@ -67,6 +67,12 @@ export const Container = styled.div`
 
   p {
     max-width: 95%;
+
+    a {
+    color: ${({ theme }) => theme.colors.secondary};
+    text-decoration: underline;
+    display: inline-block;
+  }
   }
 
   ul {
@@ -76,11 +82,7 @@ export const Container = styled.div`
     }
   }
 
-  a {
-    color: ${({ theme }) => theme.colors.secondary};
-    text-decoration: underline;
-    display: inline-block;
-  }
+
 `
 export const ContainerIcons = styled.div`
   width: 100%;

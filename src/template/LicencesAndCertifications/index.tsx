@@ -176,7 +176,7 @@ const LicencesAndCertifications: React.FC = () => {
             titleEng="MTB: Journalist Registration"
             tag="Cadastro de Registro Profissional "
             tagEng="Professional Registration Register"
-            image="LogoMTE"
+            image={LogoMTE}
           >
             {english ? (
               <p>

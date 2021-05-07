@@ -9,7 +9,11 @@ import Education from '../Education'
 import LicencesAndCertifications from '../LicencesAndCertifications'
 import Accomplishments from '../Accomplishments'
 
-const About: React.FC = ({destinyAbout}) => {
+interface AboutProps {
+  destinyAbout: any
+}
+
+const About: React.FC<AboutProps> = ({ destinyAbout }) => {
   const { english } = useEnglish()
   return (
     <Container ref={destinyAbout}>

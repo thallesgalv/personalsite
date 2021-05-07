@@ -11,8 +11,8 @@ import Portifolio from '../template/Portifolio'
 
 const Home: React.FC = () => {
   const breakPointDesktop: string = useMatchMedia('(min-width: 1100px')
-  const originAbout = useRef(null)
-  const destinyAbout = useRef(null)
+  const originAbout = useRef(null) as React.MutableRefObject<HTMLElement>
+  const destinyAbout = useRef(null) as React.MutableRefObject<HTMLElement>
   useSmoothScroll(originAbout.current, destinyAbout.current)
 
   return (

@@ -9,10 +9,10 @@ import Education from '../Education'
 import LicencesAndCertifications from '../LicencesAndCertifications'
 import Accomplishments from '../Accomplishments'
 
-const About: React.FC = () => {
+const About: React.FC = ({destinyAbout}) => {
   const { english } = useEnglish()
   return (
-    <Container>
+    <Container ref={destinyAbout}>
       <Wave color="#14141B">
         <Box>
           <Content>

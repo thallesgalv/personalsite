@@ -8,7 +8,7 @@ import { SiLinkedin, SiGithub } from 'react-icons/si'
 import Button from '../Button'
 import useMatchMedia from '../../hooks/useMatchMedia'
 
-const Header: React.FC = () => {
+const Header: React.FC = ({originAbout}) => {
   const { english, setEnglish } = useEnglish()
 
   const tabletBreakpoint: string = useMatchMedia('(max-width: 768px')
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
           <li>
             <Link href="/">{english ? 'Portifolio' : 'Portifólio'}</Link>{' '}
           </li>
-          <li>
+          <li ref={originAbout}>
             <Link href="/">{english ? 'About' : 'Sobre'}</Link>
           </li>
         </ul>

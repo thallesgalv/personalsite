@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Shape from '../components/Shape'
 import useMatchMedia from '../hooks/useMatchMedia'
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
         <Portifolio />
         <About />
       </main>
+      <Footer />
     </>
   )
 }

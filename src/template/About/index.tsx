@@ -7,6 +7,7 @@ import { useEnglish } from '../../contexts/EnglishContext'
 import Experience from '../Experience'
 import Education from '../Education'
 import LicencesAndCertifications from '../LicencesAndCertifications'
+import Accomplishments from '../Accomplishments'
 
 const About: React.FC = () => {
   const { english } = useEnglish()
@@ -58,6 +59,7 @@ const About: React.FC = () => {
       <Experience />
       <Education />
       <LicencesAndCertifications />
+      <Accomplishments />
     </Container>
   )
 }

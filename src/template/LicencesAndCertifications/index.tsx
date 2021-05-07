@@ -5,7 +5,7 @@ import Wave from '../../components/Wave'
 import Card from '../../components/Card'
 import LogoOrigamid from '../../assets/LogoOrigamid.png'
 import LogoRocketSeat from '../../assets/LogoRocketSeat.png'
-import LogoMTE from '../../assets/LogoMTE.png'
+import LogoMTE from '../../assets/logoMTE.png'
 
 const LicencesAndCertifications: React.FC = () => {
   const { english } = useEnglish()
@@ -22,7 +22,7 @@ const LicencesAndCertifications: React.FC = () => {
             titleEng="Origamid"
             tag="Cursos"
             tagEng="Courses"
-            image='LogoOrigamid'
+            image="LogoOrigamid"
           >
             {english ? (
               <div>
@@ -151,7 +151,7 @@ const LicencesAndCertifications: React.FC = () => {
             titleEng="Rocketseat"
             tag="Cursos"
             tagEng="Courses"
-            image='LogoRocketSeat'
+            image="LogoRocketSeat"
           >
             {english ? (
               <div>
@@ -176,7 +176,7 @@ const LicencesAndCertifications: React.FC = () => {
             titleEng="MTB: Journalist Registration"
             tag="Cadastro de Registro Profissional "
             tagEng="Professional Registration Register"
-            image='LogoMTE'
+            image="LogoMTE"
           >
             {english ? (
               <p>

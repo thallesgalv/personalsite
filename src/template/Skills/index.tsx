@@ -11,27 +11,13 @@ import data from '../../data/techs'
 import TechIcon from '../../components/TechIcon'
 import { useEnglish } from '../../contexts/EnglishContext'
 import { useEffect, useRef } from 'react'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
 const Skills: React.FC = () => {
   const { english } = useEnglish()
 
   const target = useRef(null)
-
-  useEffect(() => {
-    function animateOnScroll() {
-      const targetTop = target.current.getBoundingClientRect().top
-      const isVisible = targetTop - window.innerHeight * 0.6 < 0
-
-      if (isVisible) target.current.classList.add('active')
-      else target.current.classList.remove('active')
-    }
-
-    animateOnScroll()
-
-    window.addEventListener('scroll', animateOnScroll)
-
-    return () => window.removeEventListener('scroll', animateOnScroll)
-  }, [])
+  useAnimateOnScroll(target)
 
   return (
     <Container>

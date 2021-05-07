@@ -2,11 +2,16 @@ import SectionHeading from '../../components/SectionHeading'
 import { useEnglish } from '../../contexts/EnglishContext'
 import { Container, Content } from './styles'
 import { GiTrophy } from 'react-icons/gi'
+import { useRef } from 'react'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
 const Accomplishments: React.FC = () => {
   const { english } = useEnglish()
+  const target = useRef(null)
+  useAnimateOnScroll(target)
+
   return (
-    <Container>
+    <Container ref={target}>
       <SectionHeading number={5}>
         {english ? 'Accomplishments' : 'Conquistas'}
       </SectionHeading>

@@ -27,7 +27,6 @@ export const Box = styled.div`
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
   }
-
 `
 
 export const ImageContainer = styled.div`
@@ -40,6 +39,18 @@ export const ImageContainer = styled.div`
   > img {
     position: absolute;
 
+    opacity: 0;
+    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translate3d(50%, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &.active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
     @media (max-width: 767px) {
       position: unset;
       margin-top: 2rem;
@@ -49,6 +60,18 @@ export const ImageContainer = styled.div`
 
 export const Content = styled.div`
   /* width: max(35%, 600px); */
+
+  opacity: 0;
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translate3d(-50%, 0, 0);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 
   p + p {
     margin-top: 1.75rem;

@@ -5,6 +5,7 @@ import Button from '../Button'
 import TechIcon from '../TechIcon'
 import { Wrapper, Container, ContainerIcons } from './styles'
 import data from '../../data/techs'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
 interface CardProps {
   tag?: string
@@ -36,22 +37,8 @@ const Card: React.FC<CardProps> = ({
 }) => {
   const { english } = useEnglish()
   const target = useRef(null)
+  useAnimateOnScroll(target)
 
-  useEffect(() => {
-    function animateOnScroll() {
-      const targetTop = target.current.getBoundingClientRect().top
-      const isVisible = targetTop - window.innerHeight * 0.6 < 0
-
-      if (isVisible) target.current.classList.add('active')
-      else target.current.classList.remove('active')
-    }
-
-    animateOnScroll()
-
-    window.addEventListener('scroll', animateOnScroll)
-
-    return () => window.removeEventListener('scroll', animateOnScroll)
-  }, [])
 
   return (
     <Wrapper ref={target}>

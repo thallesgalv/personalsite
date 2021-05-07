@@ -8,6 +8,8 @@ import Experience from '../Experience'
 import Education from '../Education'
 import LicencesAndCertifications from '../LicencesAndCertifications'
 import Accomplishments from '../Accomplishments'
+import { useRef } from 'react'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
 interface AboutProps {
   destinyAbout: any
@@ -15,11 +17,15 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ destinyAbout }) => {
   const { english } = useEnglish()
+  const targetContent = useRef(null)
+  const targetImage = useRef(null)
+  useAnimateOnScroll(targetContent)
+  useAnimateOnScroll(targetImage)
   return (
     <Container ref={destinyAbout}>
       <Wave color="#14141B">
         <Box>
-          <Content>
+          <Content ref={targetContent}>
             <SubHeadline>{english ? 'About' : 'Sobre'}</SubHeadline>
             {english ? (
               <>
@@ -55,7 +61,7 @@ const About: React.FC<AboutProps> = ({ destinyAbout }) => {
             )}
           </Content>
           <ImageContainer>
-            <img src={Pic} alt="Placeholder" />
+            <img ref={targetImage} src={Pic} alt="Placeholder" />
           </ImageContainer>
         </Box>
       </Wave>

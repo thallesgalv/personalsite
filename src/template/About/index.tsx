@@ -8,11 +8,11 @@ import Experience from '../Experience'
 import Education from '../Education'
 import LicencesAndCertifications from '../LicencesAndCertifications'
 import Accomplishments from '../Accomplishments'
-import { useRef } from 'react'
 import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
+import { useRef } from 'react'
 
 interface AboutProps {
-  destinyAbout: any
+  destinyAbout: React.MutableRefObject<HTMLDivElement>
 }
 
 const About: React.FC<AboutProps> = ({ destinyAbout }) => {

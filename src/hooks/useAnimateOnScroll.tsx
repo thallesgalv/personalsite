@@ -1,8 +1,6 @@
-import { MutableRefObject, useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
-const useAnimateOnScroll = (
-  tgt: MutableRefObject<HTMLElement>
-) => {
+const useAnimateOnScroll = (tgt: React.MutableRefObject<HTMLElement>) => {
   useEffect(() => {
     function animateOnScroll() {
       const targetTop = tgt.current.getBoundingClientRect().top

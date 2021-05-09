@@ -16,6 +16,7 @@ export const Container = styled.div`
       'Poppins';
     text-align: center;
     margin: 4rem 0;
+    margin-top: 6rem;
 
     @media (max-width: 767px) {
       margin: 2rem 0;
@@ -65,7 +66,8 @@ export const FlexBox = styled.div`
   flex-wrap: wrap;
   gap: 4rem;
 
-  &:nth-of-type(4) {
+  &:nth-of-type(3) {
+
     margin-top: 2rem;
   }
 `
@@ -80,6 +82,7 @@ export const FlexItem = styled.div`
 `
 
 export const AnimationContainer = styled.div`
+  width: 100%;
   opacity: 0;
   transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translate3d(0, -50px, 0);

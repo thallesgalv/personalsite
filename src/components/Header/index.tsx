@@ -9,7 +9,7 @@ import Button from '../Button'
 import useMatchMedia from '../../hooks/useMatchMedia'
 
 interface HeaderProps {
-  originAbout: any
+  originAbout:  React.MutableRefObject<HTMLLIElement>
 }
 
 const Header: React.FC<HeaderProps> = ({ originAbout }) => {

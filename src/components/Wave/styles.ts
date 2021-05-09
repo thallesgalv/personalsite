@@ -5,9 +5,9 @@ export const Container = styled.div`
 `
 export const WrapperBottom = styled.div`
   transform: rotate(180deg);
+  position: relative;
+  top: 1px;
 `
 
-export const WrapperBox = styled.div`
-`
-export const WrapperTop = styled.div`
-`
+export const WrapperBox = styled.div``
+export const WrapperTop = styled.div``

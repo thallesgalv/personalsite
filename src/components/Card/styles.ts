@@ -59,10 +59,12 @@ export const Container = styled.div`
     margin: 1rem 0;
   }
 
-  a {
-    color: ${({ theme }) => theme.colors.secondary};
-    text-decoration: underline;
-    display: inline-block;
+  div {
+    a {
+      color: ${({ theme }) => theme.colors.secondary};
+      text-decoration: underline;
+      display: inline-block;
+    }
   }
 
   > h1 {
@@ -71,7 +73,7 @@ export const Container = styled.div`
     margin: 1rem 0;
   }
 
-  p {
+  >p {
     max-width: 95%;
   }
 

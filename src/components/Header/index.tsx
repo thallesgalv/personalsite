@@ -71,25 +71,24 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
       </nav>
 
       <nav>
-        <Link
+        <a
           href="https://www.linkedin.com/in/thalles-galvao/"
-          passHref={true}
+          target="_blank"
+          rel="noopener"
         >
-          <a target="_blank" rel="noopener">
-            <SiLinkedin />
-          </a>
-        </Link>
-        <Link href="https://github.com/thallesgalv">
-          <a target="_blank" rel="noopener">
-            <SiGithub />
-          </a>
-        </Link>
+          <SiLinkedin />
+        </a>
+
+        <a href="https://github.com/thallesgalv" target="_blank" rel="noopener">
+          <SiGithub />
+        </a>
+
         {mobileBreakpoint && (
-          <Link href="">
+          <a href="https://api.whatsapp.com/send?phone=5513997774462&text=Ol%C3%A1%2C%20vim%20pelo%20site." target="_blank" rel="noopener">
             <Button small>
               {english ? "Let's work together?" : 'Vamos trabalhar juntos?'}
             </Button>
-          </Link>
+          </a>
         )}
       </nav>
     </StyledHeader>

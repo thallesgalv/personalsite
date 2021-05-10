@@ -15,8 +15,10 @@ const Home: React.FC = () => {
   const destinyAbout = useRef(null)
   const originPortifolio = useRef(null)
   const destinyPortifolio = useRef(null)
+  const originHeroPortifolio = useRef(null)
   useSmoothScroll(originAbout, destinyAbout)
   useSmoothScroll(originPortifolio, destinyPortifolio)
+  useSmoothScroll(originHeroPortifolio, destinyPortifolio)
 
   return (
     <>
@@ -25,7 +27,7 @@ const Home: React.FC = () => {
       </Head>
       <Header originAbout={originAbout} originPortifolio={originPortifolio} />
       <main>
-        <Hero />
+        <Hero originHeroPortifolio={originHeroPortifolio} />
         {breakPointDesktop && <Shape />}
         <Portifolio destinyPortifolio={destinyPortifolio} />
         <About destinyAbout={destinyAbout} />

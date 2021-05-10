@@ -39,15 +39,14 @@ const Card: React.FC<CardProps> = ({
   const target = useRef(null)
   useAnimateOnScroll(target)
 
-
   return (
     <Wrapper ref={target}>
       <Container>
-        <span>{tag && english ? tagEng : tag} </span>
+        {tag && <span>{english ? tagEng : tag} </span>}
         <h1>{english ? titleEng : title}</h1>
-        <span>{period && english ? periodEng : period}</span>
-        <p>{english ? descriptionEng : description}</p>
-        <p>{children}</p>
+        {period && <span>{english ? periodEng : period}</span>}
+        {description && <p>{english ? descriptionEng : description}</p>}
+        <div>{children}</div>
         {techs && (
           <ContainerIcons>
             {[...techs.split(',')].map(i => (

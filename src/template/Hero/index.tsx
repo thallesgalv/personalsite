@@ -7,7 +7,11 @@ import useMatchMedia from '../../hooks/useMatchMedia'
 import Logo from '../../components/Logo'
 import { useEnglish } from '../../contexts/EnglishContext'
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  originHeroPortifolio: React.MutableRefObject<HTMLAnchorElement>
+}
+
+const Hero: React.FC<HeroProps> = ({ originHeroPortifolio }) => {
   const breakPointDesktop: string = useMatchMedia('(max-width: 1100px')
   const { english } = useEnglish()
   return (
@@ -18,8 +22,20 @@ const Hero: React.FC = () => {
           <Logo nights />
           <Headline />
           <ButtonContainer>
-            <Button secondary>{english ? 'Check out my portfolio' : 'Veja meu portifólio'}</Button>
-            <Button>{english ? "Let's work together?" : 'Vamos trabalhar juntos?'}</Button>
+            <a ref={originHeroPortifolio}>
+              <Button secondary>
+                {english ? 'Check out my portfolio' : 'Veja meu portifólio'}
+              </Button>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5513997774462&text=Ol%C3%A1%2C%20vim%20pelo%20site."
+              target="_blank"
+              rel="noopener"
+            >
+              <Button>
+                {english ? "Let's work together?" : 'Vamos trabalhar juntos?'}
+              </Button>
+            </a>
           </ButtonContainer>
         </Content>
         {breakPointDesktop && <Wave color="#2F495E" boxHeight={20} />}

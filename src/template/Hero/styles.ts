@@ -70,23 +70,15 @@ export const Content = styled.div`
     }
   }
 `
-export const ButtonContainer = styled.section`
+export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  button + button {
-    margin-left: 1rem;
-  }
+  gap: 1rem;
 
   @media (max-width: 767px), (min-width: 1025px) and (max-width: 1500px) {
     flex-direction: column;
     align-items: flex-end;
-
-    button + button {
-      margin-left: unset;
-      margin-top: 1rem;
-    }
   }
 
   @media (max-width: 767px) {

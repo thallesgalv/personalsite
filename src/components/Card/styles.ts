@@ -59,6 +59,12 @@ export const Container = styled.div`
     margin: 1rem 0;
   }
 
+  a {
+    color: ${({ theme }) => theme.colors.secondary};
+    text-decoration: underline;
+    display: inline-block;
+  }
+
   > h1 {
     font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(42)}
       'Poppins';
@@ -67,12 +73,6 @@ export const Container = styled.div`
 
   p {
     max-width: 95%;
-
-    a {
-    color: ${({ theme }) => theme.colors.secondary};
-    text-decoration: underline;
-    display: inline-block;
-  }
   }
 
   ul {
@@ -81,8 +81,6 @@ export const Container = styled.div`
       list-style: square;
     }
   }
-
-
 `
 export const ContainerIcons = styled.div`
   width: 100%;

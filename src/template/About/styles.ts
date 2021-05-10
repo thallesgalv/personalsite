@@ -79,5 +79,6 @@ export const Content = styled.div`
 
   strong {
     color: ${({ theme }) => theme.colors.secondary};
+    cursor: pointer;
   }
 `

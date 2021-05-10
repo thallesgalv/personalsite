@@ -4,10 +4,14 @@ import { Container, ContainerCards } from './styles'
 import data from '../../data/portifolio'
 import { useEnglish } from '../../contexts/EnglishContext'
 
-const Portifolio: React.FC = () => {
+interface PortifolioProps {
+  destinyPortifolio: React.MutableRefObject<HTMLDivElement>
+}
+
+const Portifolio: React.FC<PortifolioProps> = ({ destinyPortifolio }) => {
   const { english } = useEnglish()
   return (
-    <Container>
+    <Container ref={destinyPortifolio}>
       <SubHeadline>{english ? 'Portifolio' : 'Portifólio'}</SubHeadline>
       <p>
         {english

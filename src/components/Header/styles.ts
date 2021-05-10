@@ -41,6 +41,7 @@ export const StyledHeader = styled.header`
           align-items: center;
           height: 100%;
           color: ${({ theme }) => theme.colors.text};
+          cursor: pointer;
         }
       }
     }

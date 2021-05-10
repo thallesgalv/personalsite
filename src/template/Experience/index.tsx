@@ -5,10 +5,14 @@ import Wave from '../../components/Wave'
 import data from '../../data/experience'
 import Card from '../../components/Card'
 
-const Experience: React.FC = () => {
+interface ExperienceProps {
+  destinyExperience: React.MutableRefObject<HTMLDivElement>
+}
+
+const Experience: React.FC<ExperienceProps> = ({ destinyExperience }) => {
   const { english } = useEnglish()
   return (
-    <Container>
+    <Container ref={destinyExperience}>
       <Wave color="#14141B">
         <SectionHeading number={2}>
           {english ? 'Experience' : 'Experiência'}

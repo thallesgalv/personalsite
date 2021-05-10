@@ -10,17 +10,21 @@ import SectionHeading from '../../components/SectionHeading'
 import data from '../../data/techs'
 import TechIcon from '../../components/TechIcon'
 import { useEnglish } from '../../contexts/EnglishContext'
-import { useEffect, useRef } from 'react'
+import {useRef } from 'react'
 import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
-const Skills: React.FC = () => {
+interface SkillsProps {
+  destinySkills: React.MutableRefObject<HTMLDivElement>
+}
+
+const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
   const { english } = useEnglish()
 
   const target = useRef(null)
   useAnimateOnScroll(target)
 
   return (
-    <Container>
+    <Container ref={destinySkills}>
       <SectionHeading number={1}>
         {english ? 'Skills' : 'Competências'}
       </SectionHeading>

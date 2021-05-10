@@ -4,10 +4,14 @@ import { Container, ContainerCards } from './styles'
 import data from '../../data/education'
 import Card from '../../components/Card'
 
-const Education: React.FC = () => {
+interface EducationProps {
+  destinyEducation: React.MutableRefObject<HTMLDivElement>
+}
+
+const Education: React.FC<EducationProps> = ({ destinyEducation }) => {
   const { english } = useEnglish()
   return (
-    <Container>
+    <Container ref={destinyEducation}>
       <SectionHeading number={3}>
         {english ? 'Education' : 'Formação Acadêmica'}
       </SectionHeading>

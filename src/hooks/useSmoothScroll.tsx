@@ -38,7 +38,7 @@ const useSmoothScroll = (
 
   useEffect(() => {
     function setDestinyLocation(event: MouseEvent) {
-      const destinyLocation = destiny.current.offsetTop - 50
+      const destinyLocation = destiny.current.offsetTop - 80
 
       smoothScrollTo(0, destinyLocation, 1300)
     }

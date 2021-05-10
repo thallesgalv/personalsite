@@ -9,10 +9,11 @@ import Button from '../Button'
 import useMatchMedia from '../../hooks/useMatchMedia'
 
 interface HeaderProps {
-  originAbout:  React.MutableRefObject<HTMLLIElement>
+  originAbout: React.MutableRefObject<HTMLLIElement>
+  originPortifolio: React.MutableRefObject<HTMLLIElement>
 }
 
-const Header: React.FC<HeaderProps> = ({ originAbout }) => {
+const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
   const { english, setEnglish } = useEnglish()
 
   const tabletBreakpoint: string = useMatchMedia('(max-width: 768px')
@@ -60,11 +61,11 @@ const Header: React.FC<HeaderProps> = ({ originAbout }) => {
 
       <nav>
         <ul>
-          <li>
-            <Link href="/">{english ? 'Portifolio' : 'Portifólio'}</Link>{' '}
+          <li ref={originPortifolio}>
+            <a>{english ? 'Portifolio' : 'Portifólio'}</a>{' '}
           </li>
           <li ref={originAbout}>
-            <Link href="/">{english ? 'About' : 'Sobre'}</Link>
+            <a>{english ? 'About' : 'Sobre'}</a>
           </li>
         </ul>
       </nav>

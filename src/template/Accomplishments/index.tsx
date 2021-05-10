@@ -5,13 +5,17 @@ import { GiTrophy } from 'react-icons/gi'
 import { useRef } from 'react'
 import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
-const Accomplishments: React.FC = () => {
+interface AccomplishmentsProps {
+  destinyAccomplishments: React.Ref<HTMLDivElement>
+}
+
+const Accomplishments: React.FC<AccomplishmentsProps> = ({
+  destinyAccomplishments
+}) => {
   const { english } = useEnglish()
-  const target = useRef(null)
-  useAnimateOnScroll(target)
 
   return (
-    <Container ref={target}>
+    <Container ref={destinyAccomplishments}>
       <SectionHeading number={5}>
         {english ? 'Accomplishments' : 'Conquistas'}
       </SectionHeading>

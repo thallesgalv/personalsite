@@ -13,18 +13,21 @@ const Home: React.FC = () => {
   const breakPointDesktop: string = useMatchMedia('(min-width: 1100px')
   const originAbout = useRef(null)
   const destinyAbout = useRef(null)
+  const originPortifolio = useRef(null)
+  const destinyPortifolio = useRef(null)
   useSmoothScroll(originAbout, destinyAbout)
+  useSmoothScroll(originPortifolio, destinyPortifolio)
 
   return (
     <>
       <Head>
         <title>Homepage</title>
       </Head>
-      <Header originAbout={originAbout} />
+      <Header originAbout={originAbout} originPortifolio={originPortifolio} />
       <main>
         <Hero />
         {breakPointDesktop && <Shape />}
-        <Portifolio />
+        <Portifolio destinyPortifolio={destinyPortifolio} />
         <About destinyAbout={destinyAbout} />
       </main>
       <Footer />

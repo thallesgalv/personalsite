@@ -7,11 +7,17 @@ import LogoOrigamid from '../../assets/logoOrigamid.png'
 import LogoRocketSeat from '../../assets/logoRocketSeat.png'
 import LogoMTE from '../../assets/logoMTE.png'
 
-const LicencesAndCertifications: React.FC = () => {
+interface LicencesAndCertificationsProps {
+  destinyLicencesAndCertifications: React.MutableRefObject<HTMLDivElement>
+}
+
+const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
+  destinyLicencesAndCertifications
+}) => {
   const { english } = useEnglish()
 
   return (
-    <Container>
+    <Container ref={destinyLicencesAndCertifications}>
       <Wave color="#14141B">
         <SectionHeading number={4}>
           {english ? 'Licenses & certifications' : 'Licenças e certificados'}
@@ -25,7 +31,7 @@ const LicencesAndCertifications: React.FC = () => {
             image={LogoOrigamid}
           >
             {english ? (
-              <div>
+              <>
                 <p>Completed courses: </p>
                 <ul>
                   <li>
@@ -83,9 +89,9 @@ const LicencesAndCertifications: React.FC = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </>
             ) : (
-              <div>
+              <>
                 <p>Cursos realizados: </p>
                 <ul>
                   <li>
@@ -143,7 +149,7 @@ const LicencesAndCertifications: React.FC = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </>
             )}
           </Card>
           <Card
@@ -154,21 +160,21 @@ const LicencesAndCertifications: React.FC = () => {
             image={LogoRocketSeat}
           >
             {english ? (
-              <div>
+              <>
                 <p>Completed courses: </p>
                 <ul>
                   <li>Discover Path</li>
                   <li>Next Level Week 5</li>
                 </ul>
-              </div>
+              </>
             ) : (
-              <div>
+              <>
                 <p>Cursos realizados: </p>
                 <ul>
                   <li>Trilha Discover</li>
                   <li>Next Level Week 5</li>
                 </ul>
-              </div>
+              </>
             )}
           </Card>
           <Card

@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ originHeroPortifolio }) => {
   const { english } = useEnglish()
   return (
     <>
-      <Container>
+      <Container >
         <img src={Pic} alt="Placeholder" />
         <Content>
           <Logo nights />

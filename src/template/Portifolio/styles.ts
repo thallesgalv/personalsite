@@ -9,9 +9,9 @@ export const Container = styled.div`
   @media (max-width: 1100px) {
     padding-top: 0;
   }
-  @media (max-height: 850px) {
+  /* @media (max-height: 850px) {
     padding-top: 45vw;
-  }
+  } */
   @media (max-width: 768px) {
     padding: 0 1rem;
   }

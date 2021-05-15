@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
   const mobileBreakpoint: string = useMatchMedia('(min-width: 767px')
 
   return (
-    <StyledHeader>
+    <StyledHeader >
       <ContainerLogo>
         {mobileBreakpoint && (
           <Link href="/">

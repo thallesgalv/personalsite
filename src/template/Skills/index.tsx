@@ -24,7 +24,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
   useAnimateOnScroll(target)
 
   return (
-    <Container ref={destinySkills}>
+    <Container ref={destinySkills} >
       <SectionHeading number={1}>
         {english ? 'Skills' : 'Competências'}
       </SectionHeading>

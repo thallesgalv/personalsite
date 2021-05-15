@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = ({ destinyAbout }) => {
   useSmoothScroll(originAccomplishments, destinyAccomplishments)
 
   return (
-    <Container ref={destinyAbout}>
+    <Container ref={destinyAbout}  >
       <Wave color="#14141B">
         <Box>
           <Content ref={targetContent}>

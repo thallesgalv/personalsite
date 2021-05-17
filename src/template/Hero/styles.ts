@@ -18,7 +18,7 @@ export const Container = styled.div`
     z-index: 1;
     align-self: flex-end;
 
-    @media (max-width: 1081px) {
+    /* @media (max-width: 1081px) {
       width: 35vh;
       order: 1;
       position: absolute;
@@ -27,15 +27,16 @@ export const Container = styled.div`
 
     @media (max-width: 1025px) {
       bottom: 0;
-    }
+    } */
 
     @media (max-width: 768px) {
-      width: 50%;
+      /* width: 60%; */
+      order: 1;
     }
 
-    @media (max-width: 767px) and (max-height: 850px) {
+    /* @media (max-width: 767px) and (max-height: 850px) {
       bottom: -16%;
-    }
+    } */
   }
 `
 export const Content = styled.div`

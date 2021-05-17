@@ -41,12 +41,21 @@ body {
   }
   h3 {
     font: ${({ theme }) => theme.font.h3};
+    @media (max-width: 767px) {
+      font: ${({ theme }) => theme.font.h4};
+    }
   }
   h4 {
     font: ${({ theme }) => theme.font.h4};
+    @media (max-width: 767px) {
+      font: ${({ theme }) => theme.font.h5};
+    }
   }
   h5 {
     font: ${({ theme }) => theme.font.h5};
+    @media (max-width: 767px) {
+      font: ${({ theme }) => theme.font.subheadline};
+    }
   }
   /* p, li {
     font: ${({ theme }) => theme.font.base};

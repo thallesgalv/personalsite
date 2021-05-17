@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Shape from '../components/Shape'
+import { useEnglish } from '../contexts/EnglishContext'
 import useMatchMedia from '../hooks/useMatchMedia'
 import useSmoothScroll from '../hooks/useSmoothScroll'
 import About from '../template/About'
@@ -11,6 +12,7 @@ import Portifolio from '../template/Portifolio'
 
 const Home: React.FC = () => {
   const breakPointDesktop: string = useMatchMedia('(min-width: 1100px')
+  const { english } = useEnglish()
   const originAbout = useRef(null)
   const destinyAbout = useRef(null)
   const originPortifolio = useRef(null)
@@ -23,14 +25,27 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Homepage</title>
+        <title>
+          {english
+            ? 'Thalles Galvão — Front-End Developer'
+            : 'Thalles Galvão — Desenvolvedor Front-End'}
+        </title>
+        <meta
+          name="description"
+          content="Me chamo Thalles Galvão e sou Desenvolvedor Front-End.Conheça mais sobre mim e meu trabalho."
+        />
+        <meta
+          name="keywords"
+          content="frontend, front, front-end, desenvolvedor, criação, sites, programador"
+        />
+        <meta name="author" content="Thalles Galvão" />
       </Head>
       <Header originAbout={originAbout} originPortifolio={originPortifolio} />
       <main>
         <Hero originHeroPortifolio={originHeroPortifolio} />
         {breakPointDesktop && <Shape />}
         <Portifolio destinyPortifolio={destinyPortifolio} />
-        <About destinyAbout={destinyAbout}/>
+        <About destinyAbout={destinyAbout} />
       </main>
       <Footer />
     </>

@@ -4,14 +4,15 @@ interface SectionHeadingProps {
   number: number
 }
 
-
-const SectionHeading: React.FC<SectionHeadingProps> = ({number, children}) => {
+const SectionHeading: React.FC<SectionHeadingProps> = ({
+  number,
+  children
+}) => {
   return (
     <Container>
       <Content>
-        <h3>
-          <span>{number}</span>{children}
-        </h3>
+        <span>{number}</span>
+        <h3>{children}</h3>
       </Content>
     </Container>
   )

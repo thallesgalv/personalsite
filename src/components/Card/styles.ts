@@ -62,6 +62,7 @@ export const Wrapper = styled.li`
 
 export const Container = styled.article`
   width: max(35%, 600px);
+  min-height: ${({ theme }) => theme.rem(260)};
   border: ${({ theme }) => theme.rem(5)} solid
     ${({ theme }) => theme.colors.text};
   border-radius: ${({ theme }) => theme.rem(theme.radius)};

@@ -12,8 +12,8 @@ export const Container = styled.section`
   }
 
   h4 {
-    font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(40)}
-      'Poppins';
+    /* font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(40)}
+      'Poppins'; */
     text-align: center;
     margin: 4rem 0;
     margin-top: 6rem;

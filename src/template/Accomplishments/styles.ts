@@ -20,7 +20,9 @@ export const Content = styled.article`
   margin: 4rem auto;
 
   @media (max-width: 767px) {
+    width: 100%;
     margin: 2rem auto;
+    padding: 0 1rem;
   }
 
   > h4 {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,14 @@ export const Wrapper = styled.div`
 
   opacity: 0;
   transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  @media (max-width: 1400px) {
+    margin: 8rem 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   &:nth-child(odd) {
     justify-content: flex-start;
@@ -18,14 +26,14 @@ export const Wrapper = styled.div`
     transform: translate3d(50%, 0, 0);
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-
   .Tilt {
     img {
       margin-left: -2rem;
       top: 150px;
+
+      @media (max-width: 1400px) {
+        width: 80%;
+      }
 
       @media (max-width: 768px) {
         margin-left: unset;
@@ -41,22 +49,27 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Container = styled.div`
+export const Container = styled.article`
   width: max(35%, 600px);
   border: ${({ theme }) => theme.rem(5)} solid
     ${({ theme }) => theme.colors.text};
   border-radius: ${({ theme }) => theme.rem(theme.radius)};
   padding: 1.5rem;
   background-color: rgba(255, 255, 255, 0.05);
-  /*Ver depois*/
+
+  @media (max-width: 1400px) {
+    padding: 1.25rem;
+    font: 400 1rem/1.5rem 'Poppins';
+  }
 
   @media (max-width: 767px) {
     width: 100%;
   }
 
   > span {
-    font-weight: 200;
     margin: 1rem 0;
+    font: ${({ theme }) => theme.font.subheadline};
+    font-weight: 200;
   }
 
   div {
@@ -67,24 +80,25 @@ export const Container = styled.div`
     }
   }
 
-  > h1 {
+  > h4 {
     font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(42)}
       'Poppins';
+
     margin: 1rem 0;
   }
 
-  >p {
+  > p {
     max-width: 95%;
   }
 
-  ul {
+  div > ul {
     padding: 2rem;
     li {
       list-style: square;
     }
   }
 `
-export const ContainerIcons = styled.div`
+export const ContainerIcons = styled.ul`
   width: 100%;
   display: flex;
   justify-content: flex-start;

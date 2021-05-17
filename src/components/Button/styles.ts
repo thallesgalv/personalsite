@@ -10,7 +10,7 @@ export const StyledButton = styled.button<ButtonProps>`
   border-radius: ${({ theme }) => theme.rem(theme.radius)};
   cursor: pointer;
   color: ${({ theme }) => theme.colors.dark};
-  font: ${({ theme }) => theme.font.default};
+  font: ${({ theme }) => theme.font.base};
   font-weight: 400;
   transition: all 0.2s ease-in-out;
 

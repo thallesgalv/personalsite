@@ -4,8 +4,9 @@ export const Container = styled.div`
   min-height: 100vh;
   position: relative;
   display: grid;
-  grid-template-columns: min(700px, 45%) 1fr;
+  /* grid-template-columns: min(700px, 45%) 1fr; */
   grid-template-columns: min(700px, 40%) 1fr;
+  place-items: flex-end;
 
   @media (max-width: 1081px) {
     grid-template-columns: 1fr;

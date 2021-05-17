@@ -31,7 +31,7 @@ const TechIcon: React.FC<TechIconProps> = ({
   return (
     <Wrapper small={small} color={color} title={english ? titleEng : title}>
       <Container color={color} small={small} ref={placeIcon} />
-      <p>{english ? titleEng : title}</p>
+      <small>{english ? titleEng : title}</small>
     </Wrapper>
   )
 }

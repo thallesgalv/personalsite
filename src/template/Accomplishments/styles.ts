@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding-bottom: ${({ theme }) => theme.rem(100)};
 
   /* opacity: 0;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     transform: translate3d(0, 0, 0); */
 `
 
-export const Content = styled.div`
+export const Content = styled.article`
   width: 50%;
   margin: 4rem auto;
 
@@ -23,9 +23,9 @@ export const Content = styled.div`
     margin: 2rem auto;
   }
 
-  > h2 {
-    font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(42)}
-      'Poppins';
+  > h4 {
+    /* font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(42)}
+      'Poppins'; */
     margin: 1rem 0;
   }
 

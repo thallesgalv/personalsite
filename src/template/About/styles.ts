@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  h1 {
+export const Container = styled.section`
+  h2 {
     margin-top: 0;
 
     @media (max-width: 767px) {
@@ -11,7 +11,7 @@ export const Container = styled.div`
   }
 `
 
-export const Box = styled.div`
+export const Box = styled.section`
   display: grid;
   grid-template-columns: minmax(360px, 600px) minmax(360px, 700px);
   justify-content: center;
@@ -58,7 +58,7 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const Content = styled.div`
+export const Content = styled.article`
   /* width: max(35%, 600px); */
 
   opacity: 0;
@@ -80,5 +80,6 @@ export const Content = styled.div`
   strong {
     color: ${({ theme }) => theme.colors.secondary};
     cursor: pointer;
+    text-decoration: underline;
   }
 `

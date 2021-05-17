@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.section``
 
-export const ContainerCards = styled.div`
+export const ContainerCards = styled.ul`
   padding: 0 4rem;
 
   @media (max-width: 768px) {
     padding: 0 1rem;
   }
 
-  > div {
+  > li {
     &:last-child {
       margin-bottom: 0;
     }

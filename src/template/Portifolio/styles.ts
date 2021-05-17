@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.article`
   padding: 0 4rem;
   padding-top: 30rem;
   position: relative;
@@ -28,11 +28,11 @@ export const Container = styled.div`
     }
   }
 
-  >h1 {
+  >h2 {
     @media (max-width: 1100px) {
       text-align: center;
     }
   }
 `
 
-export const ContainerCards = styled.div``
+export const ContainerCards = styled.ul``

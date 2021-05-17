@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
   height: ${({ theme }) => theme.rem(theme.menuHeight)};
   background-color: ${({ theme }) => theme.colors.menu};
   position: fixed;
-  z-index: 2;
+  z-index: 99;
   padding: 0 4rem;
   display: flex;
   justify-content: space-between;
@@ -33,6 +33,7 @@ export const StyledHeader = styled.header`
 
       li {
         height: 100%;
+        font: ${({ theme }) => theme.font.subheadline};
 
         a {
           padding: 0 0.5rem;

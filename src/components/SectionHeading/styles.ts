@@ -6,19 +6,22 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  > h2 {
+  > h3 {
     color: ${({ theme }) => theme.colors.secondary};
     text-transform: uppercase;
-    font: 400 ${({ theme }) => theme.rem(48)} / ${({ theme }) => theme.rem(48)}
-      'Poppins';
+    /* font: 400 ${({ theme }) => theme.rem(48)} / ${({ theme }) =>
+      theme.rem(48)}
+      'Poppins'; */
+    line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px) {
-      font: 400 ${({ theme }) => theme.rem(40)} / ${({ theme }) => theme.rem(48)}
+    /* @media (max-width: 767px) {
+      font: 400 ${({ theme }) => theme.rem(40)} / ${({ theme }) =>
+      theme.rem(48)}
       'Poppins';
-    }
+    } */
 
     > span {
       border-radius: 50%;

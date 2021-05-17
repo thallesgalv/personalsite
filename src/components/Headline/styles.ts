@@ -27,7 +27,6 @@ export const RotateContainer = styled.div`
 `
 export const Heading = styled.h1`
   letter-spacing: -0.05em;
-  font: 300 ${({ theme }) => theme.rem(84)} / ${({ theme }) => theme.rem(105)} ${({ theme }) => theme.font.primary};
 
   @media (max-width: 1100px) {
     font: 300 ${({ theme }) => theme.rem(72)} / ${({ theme }) => theme.rem(88)} ${({ theme }) => theme.font.primary};
@@ -43,4 +42,5 @@ export const Heading = styled.h1`
 
 export const Description = styled.div`
   margin: 2rem 0;
+  font: ${({ theme }) => theme.font.subheadline};
 `

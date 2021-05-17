@@ -7,12 +7,14 @@ export const StyledFooter = styled.footer`
   display: grid;
   place-content: center;
 
-  >div {
+  >article {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `
 
-export const ContainerIcons = styled.div`
+export const ContainerIcons = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;

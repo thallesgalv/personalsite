@@ -1,5 +1,5 @@
 import Tilt from 'react-tilt'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { useEnglish } from '../../contexts/EnglishContext'
 import Button from '../Button'
 import TechIcon from '../TechIcon'
@@ -43,10 +43,11 @@ const Card: React.FC<CardProps> = ({
     <Wrapper ref={target}>
       <Container>
         {tag && <span>{english ? tagEng : tag} </span>}
-        <h1>{english ? titleEng : title}</h1>
+        <h4>{english ? titleEng : title}</h4>
         {period && <span>{english ? periodEng : period}</span>}
         {description && <p>{english ? descriptionEng : description}</p>}
-        <div>{children}</div>
+        {children && <div>{children}</div>}
+
         {techs && (
           <ContainerIcons>
             {[...techs.split(',')].map(i => (

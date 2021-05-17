@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components'
 import { TechIconCssProps } from '.'
 
-export const Wrapper = styled.div<TechIconCssProps>`
+export const Wrapper = styled.li<TechIconCssProps>`
   width: ${({ small }) => (small ? '4rem' : '6.25rem')};
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  > p {
+  > small {
     font-size: ${({ small }) => (small ? '0.75rem' : '1rem')};
     line-height: ${({ small }) => (small ? '1rem' : '1.5rem')};
     font-weight: 200;

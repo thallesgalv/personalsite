@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
   const mobileBreakpoint: string = useMatchMedia('(min-width: 767px')
 
   return (
-    <StyledHeader >
+    <StyledHeader>
       <ContainerLogo>
         {mobileBreakpoint && (
           <Link href="/">
@@ -84,11 +84,12 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
         </a>
 
         {mobileBreakpoint && (
-          <a href="https://api.whatsapp.com/send?phone=5513997774462&text=Ol%C3%A1%2C%20vim%20pelo%20site." target="_blank" rel="noopener">
-            <Button small>
-              {english ? "Let's work together?" : 'Vamos trabalhar juntos?'}
-            </Button>
-          </a>
+          <Button
+            small
+            link="https://api.whatsapp.com/send?phone=5513997774462&text=Ol%C3%A1%2C%20vim%20pelo%20site."
+          >
+            {english ? "Let's work together?" : 'Vamos trabalhar juntos?'}
+          </Button>
         )}
       </nav>
     </StyledHeader>

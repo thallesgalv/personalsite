@@ -6,15 +6,21 @@ const Footer: React.FC = () => {
   const { english } = useEnglish()
   return (
     <StyledFooter>
-      <div>
+      <article>
         {english ? 'Made with ' : 'Feito com'}💖{' '}
         {english ? 'using' : 'utilizando'}
         <ContainerIcons>
-        <SiNextDotJs />
-        <SiTypescript />
-        <SiStyledComponents />
+          <li>
+            <SiNextDotJs />
+          </li>
+          <li>
+            <SiTypescript />
+          </li>
+          <li>
+            <SiStyledComponents style={{ fontSize: '35px' }} />
+          </li>
         </ContainerIcons>
-      </div>
+      </article>
     </StyledFooter>
   )
 }

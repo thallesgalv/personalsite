@@ -29,7 +29,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
         {english ? 'Skills' : 'Competências'}
       </SectionHeading>
       <AnimationContainer ref={target}>
-        <h3>{english ? 'Industry Knowledge:' : 'Conhecimento do setor:'}</h3>
+        <h4>{english ? 'Industry Knowledge:' : 'Conhecimento do setor:'}</h4>
 
         <Grid>
           {data &&
@@ -45,12 +45,12 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
                 />
               ))}
         </Grid>
-        <h3>
+        <h4>
           {english ? 'Tools & Technologies:' : 'Tecnologias e Ferramentas:'}
-        </h3>
+        </h4>
         <FlexBox>
           <FlexItem>
-            <h4>{english ? 'Experient' : 'Experiente'}</h4>
+            <h5>{english ? 'Experient' : 'Experiente'}</h5>
             <Grid>
               {data &&
                 data.techs
@@ -67,7 +67,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
             </Grid>
           </FlexItem>
           <FlexItem>
-            <h4>{english ? 'Improving' : 'Aprimorando'}</h4>
+            <h5>{english ? 'Improving' : 'Aprimorando'}</h5>
             <Grid>
               {data &&
                 data.techs
@@ -86,7 +86,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
         </FlexBox>
         <FlexBox>
           <FlexItem>
-            <h4>{english ? 'Next Steps' : 'Próximos Passos'}</h4>
+            <h5>{english ? 'Next Steps' : 'Próximos Passos'}</h5>
             <SubGrid>
               {data &&
                 data.techs
@@ -103,11 +103,11 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
             </SubGrid>
           </FlexItem>
           <FlexItem>
-            <h4>
+            <h5>
               {english
                 ? 'Brief Contact / Basic knowledge'
                 : 'Breve Contato/Conhecimento básico'}
-            </h4>
+            </h5>
             <SubGrid>
               {data &&
                 data.techs
@@ -124,7 +124,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
             </SubGrid>
           </FlexItem>
         </FlexBox>
-        <h3>Soft Skills:</h3>
+        <h4>Soft Skills:</h4>
         <Grid>
           {data &&
             data.techs

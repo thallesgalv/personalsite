@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding: 4rem;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     padding: 1rem;
   }
 
-  h3 {
+  h4 {
     font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(40)}
       'Poppins';
     text-align: center;
@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
 `
 
-export const Grid = styled.div`
+export const Grid = styled.ul`
   max-width: 800px;
   width: 100%;
   display: grid;
@@ -58,7 +58,7 @@ export const SubGrid = styled(Grid)`
   }
 `
 
-export const FlexBox = styled.div`
+export const FlexBox = styled.ul`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -72,8 +72,8 @@ export const FlexBox = styled.div`
   }
 `
 
-export const FlexItem = styled.div`
-  > h4 {
+export const FlexItem = styled.li`
+  > h5 {
     font: 400 ${({ theme }) => theme.rem(24)} / ${({ theme }) => theme.rem(32)}
       'Poppins';
     text-align: center;
@@ -81,7 +81,7 @@ export const FlexItem = styled.div`
   }
 `
 
-export const AnimationContainer = styled.div`
+export const AnimationContainer = styled.article`
   width: 100%;
   opacity: 0;
   transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);

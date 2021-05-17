@@ -9,9 +9,9 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({number, children}) => {
   return (
     <Container>
       <Content>
-        <h2>
+        <h3>
           <span>{number}</span>{children}
-        </h2>
+        </h3>
       </Content>
     </Container>
   )

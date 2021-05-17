@@ -20,12 +20,12 @@ const Accomplishments: React.FC<AccomplishmentsProps> = ({
         {english ? 'Accomplishments' : 'Conquistas'}
       </SectionHeading>
       <Content>
-        <h2>
+        <h4>
           <GiTrophy />{' '}
           {english
             ? 'Finalist of the XXI Congresso de Ciências da Comunicação na Região Sudeste (XXI Congress of Communication Sciences in the Southeast Region)'
             : 'Finalista do XXI Congresso de Ciências da Comunicação na Região Sudeste '}
-        </h2>
+        </h4>
         <p>
           {english
             ? "My undergraduate thesis 'Eight decades of Cine Roxy: A multimedia reporting model' was an Expocom finalist in the 'Production in Digital Journalism (JO7)' category, within the XXI Congress of Communication Sciences in the Southeast Region. The project got top marks by the university's board. "

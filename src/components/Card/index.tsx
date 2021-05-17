@@ -6,6 +6,7 @@ import TechIcon from '../TechIcon'
 import { Wrapper, Container, ContainerIcons } from './styles'
 import data from '../../data/techs'
 import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
+import useMatchMedia from '../../hooks/useMatchMedia'
 
 interface CardProps {
   tag?: string
@@ -38,6 +39,7 @@ const Card: React.FC<CardProps> = ({
   const { english } = useEnglish()
   const target = useRef(null)
   useAnimateOnScroll(target)
+  const mobileBreakpoint: string = useMatchMedia('(min-width: 767px')
 
   return (
     <Wrapper ref={target}>
@@ -68,17 +70,23 @@ const Card: React.FC<CardProps> = ({
           </Button>
         )}
       </Container>
-      <Tilt
-        className="Tilt"
-        options={{
-          max: 20,
-          scale: 1.075
-        }}
-      >
-        <div className="Tilt-inner">
+      {mobileBreakpoint ? (
+        <Tilt
+          className="Tilt"
+          options={{
+            max: 20,
+            scale: 1.075
+          }}
+        >
+          <div className="Tilt-inner">
+            <img src={image} alt={english ? titleEng : title} />
+          </div>
+        </Tilt>
+      ) : (
+        <div>
           <img src={image} alt={english ? titleEng : title} />
         </div>
-      </Tilt>
+      )}
     </Wrapper>
   )
 }

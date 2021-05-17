@@ -30,7 +30,7 @@ const Home: React.FC = () => {
         <Hero originHeroPortifolio={originHeroPortifolio} />
         {breakPointDesktop && <Shape />}
         <Portifolio destinyPortifolio={destinyPortifolio} />
-        <About destinyAbout={destinyAbout} />
+        <About destinyAbout={destinyAbout}/>
       </main>
       <Footer />
     </>

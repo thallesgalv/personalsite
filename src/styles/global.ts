@@ -30,6 +30,7 @@ body {
   color: ${({ theme }) => theme.colors.text};
   overflow-x: hidden;
   font: ${({ theme }) => theme.font.base};
+  position: relative;
 
   h1 {
     font: 300 ${({ theme }) => theme.rem(84)} / ${({ theme }) =>
@@ -61,6 +62,7 @@ body {
   @media (max-width: 720px) {
     html {
       font-size: 87.5%;
+      overflow-x: hidden;
     }
   }
 }

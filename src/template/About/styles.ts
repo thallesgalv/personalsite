@@ -46,14 +46,18 @@ export const ImageContainer = styled.div`
     align-items: center;
     flex-direction: column;
 
-    &.active {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
+    @media (max-width: 768px) {
+      transform: translate3d(15px, 0, 0);
     }
 
     @media (max-width: 767px) {
       position: unset;
       margin-top: 2rem;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
   }
 `
@@ -67,6 +71,10 @@ export const Content = styled.article`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    transform: translate3d(-15px, 0, 0);
+  }
 
   &.active {
     opacity: 1;

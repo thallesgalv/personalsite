@@ -22,16 +22,19 @@ export const Container = styled.div`
       width: 35vh;
       order: 1;
       position: absolute;
-      bottom: 8%;
+      bottom: 3%;
+    }
+
+    @media (max-width: 1025px) {
+      bottom: 0;
     }
 
     @media (max-width: 768px) {
       width: 50%;
-      bottom: 0;
     }
 
     @media (max-width: 767px) and (max-height: 850px) {
-      bottom: -10%;
+      bottom: -16%;
     }
   }
 `
@@ -77,12 +80,13 @@ export const ButtonContainer = styled.div`
   align-items: center;
   gap: 1rem;
 
-  @media (max-width: 767px), (min-width: 1025px) and (max-width: 1500px) {
+  @media (min-width: 1081px) and (max-width: 1500px) {
     flex-direction: column;
     align-items: flex-end;
+    /* align-items: center; */
   }
-
   @media (max-width: 767px) {
+    flex-direction: column;
     align-items: center;
   }
 `

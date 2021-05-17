@@ -11,7 +11,7 @@ interface PortifolioProps {
 const Portifolio: React.FC<PortifolioProps> = ({ destinyPortifolio }) => {
   const { english } = useEnglish()
   return (
-    <Container ref={destinyPortifolio} >
+    <Container ref={destinyPortifolio}>
       <SubHeadline>{english ? 'Portifolio' : 'Portifólio'}</SubHeadline>
       <p>
         {english

@@ -14,19 +14,29 @@ export const Wrapper = styled.li`
   }
 
   @media (max-width: 768px) {
+    margin: 4rem 0;
     flex-direction: column;
   }
 
   &:nth-child(odd) {
     justify-content: flex-start;
     transform: translate3d(-50%, 0, 0);
+
+    @media (max-width: 768px) {
+      transform: translate3d(-15px, 0, 0);
+    }
   }
   &:nth-child(even) {
     justify-content: flex-end;
     transform: translate3d(50%, 0, 0);
+
+    @media (max-width: 768px) {
+      transform: translate3d(15px, 0, 0);
+    }
   }
 
-  .Tilt {
+  .Tilt,
+  div {
     img {
       margin-left: -2rem;
       top: 150px;
@@ -38,7 +48,8 @@ export const Wrapper = styled.li`
       @media (max-width: 768px) {
         margin-left: unset;
         top: unset;
-        margin: 1rem 0;
+        margin: 1rem auto;
+        width: 90%;
       }
     }
   }
@@ -64,12 +75,17 @@ export const Container = styled.article`
 
   @media (max-width: 767px) {
     width: 100%;
+    padding: 1rem;
   }
 
   > span {
     margin: 1rem 0;
     font: ${({ theme }) => theme.font.subheadline};
     font-weight: 200;
+
+    @media (max-width: 767px) {
+      margin: 0.5rem 0;
+    }
   }
 
   div {

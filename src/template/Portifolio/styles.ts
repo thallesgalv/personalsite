@@ -9,11 +9,9 @@ export const Container = styled.article`
   @media (max-width: 1100px) {
     padding-top: 0;
   }
-  /* @media (max-height: 850px) {
-    padding-top: 45vw;
-  } */
   @media (max-width: 768px) {
     padding: 0 1rem;
+    padding-top: 4rem;
   }
   @media (max-width: 380px) {
     padding-top: 5rem;

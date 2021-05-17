@@ -43,4 +43,10 @@ export const Heading = styled.h1`
 export const Description = styled.div`
   margin: 2rem 0;
   font: ${({ theme }) => theme.font.subheadline};
+
+  @media (max-width: 767px) {
+    font: ${({ theme }) => theme.font.base};
+    width: 70%;
+    margin: 2rem auto;
+  }
 `

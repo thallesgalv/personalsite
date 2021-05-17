@@ -35,6 +35,10 @@ export const StyledHeader = styled.header`
         height: 100%;
         font: ${({ theme }) => theme.font.subheadline};
 
+        @media (max-width: 767px) {
+          font: ${({ theme }) => theme.font.base};
+        }
+
         a {
           padding: 0 0.5rem;
           display: flex;

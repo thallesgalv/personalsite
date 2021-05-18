@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
 
       <nav>
         <a
-          href="https://www.linkedin.com/in/thalles-galvao/"
+          href="https://www.linkedin.com/in/thallesgalvao/"
           target="_blank"
           rel="noopener"
         >

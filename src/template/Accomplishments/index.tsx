@@ -35,7 +35,7 @@ const Accomplishments: React.FC<AccomplishmentsProps> = ({
             target="_blank"
             rel="noopener"
           >
-            {english ? ' See more here' : ' Veja mais aqui'}
+            {english ? 'See more here' : 'Veja mais aqui'}
           </a>
         </p>
       </Content>

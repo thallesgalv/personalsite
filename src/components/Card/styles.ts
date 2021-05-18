@@ -114,6 +114,12 @@ export const Container = styled.article`
       list-style: square;
     }
   }
+
+  button {
+    @media (max-width: 768px) {
+    width: 100%;
+    }
+  }
 `
 export const ContainerIcons = styled.ul`
   width: 100%;
@@ -125,6 +131,6 @@ export const ContainerIcons = styled.ul`
   flex-wrap: wrap;
 
   @media (max-width: 767px) {
-    gap: 1rem;
+    gap: 1.25rem;
   }
 `

@@ -4,7 +4,6 @@ export const Container = styled.div`
   min-height: 100vh;
   position: relative;
   display: grid;
-  /* grid-template-columns: min(700px, 45%) 1fr; */
   grid-template-columns: min(700px, 40%) 1fr;
   place-items: flex-end;
 
@@ -18,25 +17,17 @@ export const Container = styled.div`
     z-index: 1;
     align-self: flex-end;
 
-    /* @media (max-width: 1081px) {
-      width: 35vh;
+    @media (max-width: 1100px) {
       order: 1;
-      position: absolute;
-      bottom: 3%;
+      width: 60%;
+      margin-right: auto;
+      margin-bottom: auto;
     }
 
-    @media (max-width: 1025px) {
-      bottom: 0;
-    } */
-
-    @media (max-width: 768px) {
-      /* width: 60%; */
-      order: 1;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin: unset;
     }
-
-    /* @media (max-width: 767px) and (max-height: 850px) {
-      bottom: -16%;
-    } */
   }
 `
 export const Content = styled.div`
@@ -56,12 +47,9 @@ export const Content = styled.div`
   @media (max-width: 1079px) {
     margin-top: ${({ theme }) => theme.rem(theme.menuHeight + 20)};
   }
-  @media (max-width: 768px) {
-    padding: 0 1rem;
-    margin-top: 0;
-  }
   @media (max-width: 767px) {
-    margin-top: ${({ theme }) => theme.rem(theme.menuHeight + 10)};
+    padding: 0 1rem;
+    margin-top: ${({ theme }) => theme.rem(theme.menuHeight + 40)};
   }
 
   svg {
@@ -84,8 +72,8 @@ export const ButtonContainer = styled.div`
   @media (min-width: 1081px) and (max-width: 1500px) {
     flex-direction: column;
     align-items: flex-end;
-    /* align-items: center; */
   }
+
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;

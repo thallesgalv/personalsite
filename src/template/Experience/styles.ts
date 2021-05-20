@@ -14,21 +14,4 @@ export const ContainerCards = styled.ul`
       margin-bottom: 0;
     }
   }
-
-
-
-  /* > p {
-    max-width: 400px;
-
-    @media (max-width: 1100px) {
-      max-width: unset;
-      text-align: center;
-    }
-  }
-
-  > h1 {
-    @media (max-width: 1100px) {
-      text-align: center;
-    }
-  } */
 `

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { TechIconCssProps } from '.'
 
 export const Wrapper = styled.li<TechIconCssProps>`
@@ -13,10 +13,6 @@ export const Wrapper = styled.li<TechIconCssProps>`
     line-height: ${({ small }) => (small ? '1rem' : '1.5rem')};
     font-weight: 200;
     text-align: center;
-
-    /*
-    overflow: hidden;
-    text-overflow: ellipsis; */
   }
 `
 export const Container = styled.div<TechIconCssProps>`

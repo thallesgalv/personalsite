@@ -1,3 +1,6 @@
+import { useRef } from 'react'
+import { useEnglish } from '../../contexts/EnglishContext'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 import {
   AnimationContainer,
   Container,
@@ -6,12 +9,10 @@ import {
   Grid,
   SubGrid
 } from './styles'
-import SectionHeading from '../../components/SectionHeading'
 import data from '../../data/techs'
+import SectionHeading from '../../components/SectionHeading'
 import TechIcon from '../../components/TechIcon'
-import { useEnglish } from '../../contexts/EnglishContext'
-import {useRef } from 'react'
-import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
+
 
 interface SkillsProps {
   destinySkills: React.MutableRefObject<HTMLDivElement>

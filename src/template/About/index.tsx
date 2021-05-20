@@ -1,16 +1,16 @@
-import Wave from '../../components/Wave'
-import SubHeadline from '../../components/SubHeadline'
+import { useRef } from 'react'
+import { useEnglish } from '../../contexts/EnglishContext'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
+import useSmoothScroll from '../../hooks/useSmoothScroll'
 import { Box, Container, Content, ImageContainer } from './styles'
 import Pic from '../../assets/about.png'
 import Skills from '../Skills'
-import { useEnglish } from '../../contexts/EnglishContext'
 import Experience from '../Experience'
 import Education from '../Education'
+import Wave from '../../components/Wave'
+import SubHeadline from '../../components/SubHeadline'
 import LicencesAndCertifications from '../LicencesAndCertifications'
 import Accomplishments from '../Accomplishments'
-import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
-import { useRef } from 'react'
-import useSmoothScroll from '../../hooks/useSmoothScroll'
 
 interface AboutProps {
   destinyAbout: React.MutableRefObject<HTMLDivElement>

@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import { useRef } from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Shape from '../components/Shape'
-import { useEnglish } from '../contexts/EnglishContext'
 import useMatchMedia from '../hooks/useMatchMedia'
 import useSmoothScroll from '../hooks/useSmoothScroll'
-import About from '../template/About'
+import { useEnglish } from '../contexts/EnglishContext'
 import Hero from '../template/Hero'
+import Header from '../components/Header'
+import Shape from '../components/Shape'
 import Portifolio from '../template/Portifolio'
+import About from '../template/About'
+import Footer from '../components/Footer'
 
 const Home: React.FC = () => {
   const breakPointDesktop: string = useMatchMedia('(min-width: 1100px')

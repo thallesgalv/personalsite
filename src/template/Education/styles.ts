@@ -9,5 +9,4 @@ export const ContainerCards = styled.ul`
   @media (max-width: 767px) {
     padding: 0 1rem;
   }
-
 `

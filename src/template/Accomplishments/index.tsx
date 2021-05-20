@@ -1,9 +1,7 @@
-import SectionHeading from '../../components/SectionHeading'
 import { useEnglish } from '../../contexts/EnglishContext'
+import SectionHeading from '../../components/SectionHeading'
 import { Container, Content } from './styles'
 import { GiTrophy } from 'react-icons/gi'
-import { useRef } from 'react'
-import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
 
 interface AccomplishmentsProps {
   destinyAccomplishments: React.Ref<HTMLDivElement>

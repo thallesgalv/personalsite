@@ -1,8 +1,8 @@
-import SectionHeading from '../../components/SectionHeading'
 import { useEnglish } from '../../contexts/EnglishContext'
-import { Container, ContainerCards } from './styles'
+import SectionHeading from '../../components/SectionHeading'
 import data from '../../data/education'
 import Card from '../../components/Card'
+import { Container, ContainerCards } from './styles'
 
 interface EducationProps {
   destinyEducation: React.MutableRefObject<HTMLDivElement>

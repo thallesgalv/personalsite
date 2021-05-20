@@ -1,12 +1,11 @@
+import useMatchMedia from '../../hooks/useMatchMedia'
+import { useEnglish } from '../../contexts/EnglishContext'
+import { Container, Content, ButtonContainer } from './styles'
+import MobilePic from '../../assets/heroMobile.png'
+import Pic from '../../assets/hero.png'
 import Headline from '../../components/Headline'
 import Button from '../../components/Button'
-import { Container, Content, ButtonContainer } from './styles'
-import Pic from '../../assets/hero.png'
-import MobilePic from '../../assets/heroMobile.png'
-import Wave from '../../components/Wave'
-import useMatchMedia from '../../hooks/useMatchMedia'
 import Logo from '../../components/Logo'
-import { useEnglish } from '../../contexts/EnglishContext'
 
 interface HeroProps {
   originHeroPortifolio: React.MutableRefObject<HTMLDivElement>
@@ -18,11 +17,7 @@ const Hero: React.FC<HeroProps> = ({ originHeroPortifolio }) => {
   return (
     <>
       <Container>
-        {breakPointDesktop ? (
-          <img src={MobilePic} alt="Thalles Galvão" loading="lazy" />
-        ) : (
-          <img src={Pic} alt="Thalles Galvão" loading="lazy" />
-        )}
+        <img src={breakPointDesktop ? MobilePic : Pic} alt="Thalles Galvão" />
 
         <Content>
           <Logo nights />
@@ -38,7 +33,6 @@ const Hero: React.FC<HeroProps> = ({ originHeroPortifolio }) => {
             </Button>
           </ButtonContainer>
         </Content>
-        {/* {breakPointDesktop && <Wave color="#2F495E" boxHeight={20} />} */}
       </Container>
     </>
   )

@@ -1,11 +1,11 @@
-import { Container, ContainerCards } from './styles'
 import { useEnglish } from '../../contexts/EnglishContext'
-import SectionHeading from '../../components/SectionHeading'
-import Wave from '../../components/Wave'
-import Card from '../../components/Card'
+import { Container, ContainerCards } from './styles'
 import LogoOrigamid from '../../assets/logoOrigamid.png'
 import LogoRocketSeat from '../../assets/logoRocketSeat.png'
 import LogoMTE from '../../assets/logoMTE.png'
+import SectionHeading from '../../components/SectionHeading'
+import Wave from '../../components/Wave'
+import Card from '../../components/Card'
 
 interface LicencesAndCertificationsProps {
   destinyLicencesAndCertifications: React.MutableRefObject<HTMLDivElement>

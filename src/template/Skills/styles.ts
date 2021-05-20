@@ -12,8 +12,6 @@ export const Container = styled.section`
   }
 
   h4 {
-    /* font: 400 ${({ theme }) => theme.rem(36)} / ${({ theme }) => theme.rem(40)}
-      'Poppins'; */
     text-align: center;
     margin: 4rem 0;
     margin-top: 6rem;
@@ -67,7 +65,6 @@ export const FlexBox = styled.ul`
   gap: 4rem;
 
   &:nth-of-type(3) {
-
     margin-top: 2rem;
   }
 `

@@ -1,12 +1,12 @@
-import Tilt from 'react-tilt'
 import { useRef } from 'react'
+import Tilt from 'react-tilt'
 import { useEnglish } from '../../contexts/EnglishContext'
+import useMatchMedia from '../../hooks/useMatchMedia'
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
+import { Wrapper, Container, ContainerIcons } from './styles'
 import Button from '../Button'
 import TechIcon from '../TechIcon'
-import { Wrapper, Container, ContainerIcons } from './styles'
 import data from '../../data/techs'
-import useAnimateOnScroll from '../../hooks/useAnimateOnScroll'
-import useMatchMedia from '../../hooks/useMatchMedia'
 
 interface CardProps {
   tag?: string

@@ -1,12 +1,12 @@
-import { useEnglish } from '../../contexts/EnglishContext'
-import { StyledHeader, ContainerLogo, ContainerButton } from './styles'
 import Link from 'next/link'
-import Logo from '../Logo'
-import FlagBrazil from '../../assets/flagBrazil.png'
-import FlagUsa from '../../assets/flagUsa.png'
-import { SiLinkedin, SiGithub } from 'react-icons/si'
-import Button from '../Button'
+import { useEnglish } from '../../contexts/EnglishContext'
 import useMatchMedia from '../../hooks/useMatchMedia'
+import { SiLinkedin, SiGithub } from 'react-icons/si'
+import { StyledHeader, ContainerLogo, ContainerButton } from './styles'
+import FlagUsa from '../../assets/flagUsa.png'
+import FlagBrazil from '../../assets/flagBrazil.png'
+import Logo from '../Logo'
+import Button from '../Button'
 
 interface HeaderProps {
   originAbout: React.MutableRefObject<HTMLLIElement>
@@ -22,13 +22,6 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
   return (
     <StyledHeader>
       <ContainerLogo>
-        {mobileBreakpoint && (
-          <Link href="/">
-            <a>
-              <Logo nights />
-            </a>
-          </Link>
-        )}
         <ContainerButton>
           <button
             onClick={() => setEnglish(false)}
@@ -57,6 +50,13 @@ const Header: React.FC<HeaderProps> = ({ originAbout, originPortifolio }) => {
             />
           </button>
         </ContainerButton>
+        {mobileBreakpoint && (
+          <Link href="/">
+            <a>
+              <Logo nights />
+            </a>
+          </Link>
+        )}
       </ContainerLogo>
 
       <nav>

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  /* padding-top: 2rem;
-  padding-bottom: 4rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +11,6 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     color: ${({ theme }) => theme.colors.secondary};
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; */
     display: grid;
     grid-template-columns: 50px 1fr;
     justify-content: center;
@@ -43,13 +37,10 @@ export const Content = styled.div`
       justify-content: center;
       align-items: center;
       font: ${({ theme }) => theme.font.h5};
-      /* margin-right: 1rem; */
       position: relative;
 
       @media (max-width: 767px) {
         font: ${({ theme }) => theme.font.subheadline};
-        /* height: ${({ theme }) => theme.rem(40)};
-        width: ${({ theme }) => theme.rem(40)}; */
       }
 
 

@@ -63,8 +63,6 @@ export const ImageContainer = styled.div`
 `
 
 export const Content = styled.article`
-  /* width: max(35%, 600px); */
-
   opacity: 0;
   transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translate3d(-50%, 0, 0);

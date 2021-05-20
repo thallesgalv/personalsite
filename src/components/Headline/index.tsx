@@ -1,6 +1,6 @@
-import { StyledHeadline, RotateContainer, Heading, Description } from './styles'
 import { useState, useRef, useEffect } from 'react'
 import { useEnglish } from '../../contexts/EnglishContext'
+import { StyledHeadline, RotateContainer, Heading, Description } from './styles'
 
 const Headline: React.FC = () => {
   const { english } = useEnglish()
@@ -22,9 +22,13 @@ const Headline: React.FC = () => {
     }
   }
 
+
+  useEffect(() => {
+    wordSlider()
+  }, [])
+
   useEffect(() => {
     const interval = setInterval(wordSlider, 2000)
-
     return () => clearInterval(interval)
   }, [axisY, windowWidth])
 

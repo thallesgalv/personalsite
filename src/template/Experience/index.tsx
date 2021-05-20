@@ -1,8 +1,8 @@
-import { Container, ContainerCards } from './styles'
 import { useEnglish } from '../../contexts/EnglishContext'
+import data from '../../data/experience'
+import { Container, ContainerCards } from './styles'
 import SectionHeading from '../../components/SectionHeading'
 import Wave from '../../components/Wave'
-import data from '../../data/experience'
 import Card from '../../components/Card'
 
 interface ExperienceProps {

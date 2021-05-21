@@ -38,6 +38,10 @@ export const Wrapper = styled.li`
 
   &.verticalAnimation {
     transform: translate3d(0, 30%, 0);
+
+    @media (max-width: 768px) {
+      transform: translate3d(0, 15px, 0);
+    }
   }
 
   .Tilt,

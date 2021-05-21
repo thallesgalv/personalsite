@@ -29,6 +29,7 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
             tag="Cursos"
             tagEng="Courses"
             image={LogoOrigamid}
+            verticalAnimation
           >
             {english ? (
               <>
@@ -158,6 +159,7 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
             tag="Cursos"
             tagEng="Courses"
             image={LogoRocketSeat}
+            verticalAnimation
           >
             {english ? (
               <>
@@ -183,6 +185,7 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
             tag="Cadastro de Registro Profissional "
             tagEng="Professional Registration Register"
             image={LogoMTE}
+            verticalAnimation
           >
             {english ? (
               <p>

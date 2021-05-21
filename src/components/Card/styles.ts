@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.li`
   display: flex;
@@ -26,6 +26,7 @@ export const Wrapper = styled.li`
       transform: translate3d(-15px, 0, 0);
     }
   }
+
   &:nth-child(even) {
     justify-content: flex-end;
     transform: translate3d(50%, 0, 0);
@@ -33,6 +34,10 @@ export const Wrapper = styled.li`
     @media (max-width: 768px) {
       transform: translate3d(15px, 0, 0);
     }
+  }
+
+  &.verticalAnimation {
+    transform: translate3d(0, 30%, 0);
   }
 
   .Tilt,
@@ -117,7 +122,7 @@ export const Container = styled.article`
 
   button {
     @media (max-width: 768px) {
-    width: 100%;
+      width: 100%;
     }
   }
 `

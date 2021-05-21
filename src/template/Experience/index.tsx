@@ -32,6 +32,7 @@ const Experience: React.FC<ExperienceProps> = ({ destinyExperience }) => {
                 image={workPlace.image}
                 period={workPlace.period}
                 periodEng={workPlace.periodEng}
+                verticalAnimation
               />
             ))}
         </ContainerCards>

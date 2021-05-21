@@ -8,7 +8,7 @@ import Button from '../Button'
 import TechIcon from '../TechIcon'
 import data from '../../data/techs'
 
-interface CardProps {
+export interface CardProps {
   tag?: string
   tagEng?: string
   title: string
@@ -20,6 +20,7 @@ interface CardProps {
   image: string
   period?: string
   periodEng?: string
+  verticalAnimation?: boolean
 }
 
 const Card: React.FC<CardProps> = ({
@@ -34,7 +35,8 @@ const Card: React.FC<CardProps> = ({
   image,
   period,
   periodEng,
-  children
+  children,
+  verticalAnimation
 }) => {
   const { english } = useEnglish()
   const target = useRef(null)
@@ -42,7 +44,7 @@ const Card: React.FC<CardProps> = ({
   const mobileBreakpoint: string = useMatchMedia('(min-width: 767px')
 
   return (
-    <Wrapper ref={target}>
+    <Wrapper ref={target} className={verticalAnimation && 'verticalAnimation'}>
       <Container>
         {tag && <span>{english ? tagEng : tag} </span>}
         <h4>{english ? titleEng : title}</h4>

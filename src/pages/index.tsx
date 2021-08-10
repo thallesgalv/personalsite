@@ -9,6 +9,7 @@ import Shape from '../components/Shape'
 import Portifolio from '../template/Portifolio'
 import About from '../template/About'
 import Footer from '../components/Footer'
+import thumb from '../assets/thumb.png'
 
 const Home: React.FC = () => {
   const breakPointDesktop: string = useMatchMedia('(min-width: 1100px')
@@ -39,6 +40,7 @@ const Home: React.FC = () => {
           content="frontend, front, front-end, desenvolvedor, criação, sites, programador"
         />
         <meta name="author" content="Thalles Galvão" />
+        <meta property="og:image" content={thumb} key="ogimage" />
       </Head>
       <Header originAbout={originAbout} originPortifolio={originPortifolio} />
       <main>

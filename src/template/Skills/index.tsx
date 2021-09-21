@@ -52,7 +52,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
         <FlexBox>
           <FlexItem>
             <h5>{english ? 'Experient' : 'Experiente'}</h5>
-            <Grid>
+            <Grid style={{maxWidth: '600px'}}>
               {data &&
                 data.techs
                   .filter(tech => tech.category === 'experient')
@@ -69,7 +69,7 @@ const Skills: React.FC<SkillsProps> = ({ destinySkills }) => {
           </FlexItem>
           <FlexItem>
             <h5>{english ? 'Improving' : 'Aprimorando'}</h5>
-            <Grid>
+            <Grid style={{maxWidth: '600px'}}>
               {data &&
                 data.techs
                   .filter(tech => tech.category === 'improving')

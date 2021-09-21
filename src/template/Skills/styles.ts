@@ -60,7 +60,7 @@ export const FlexBox = styled.ul`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 4rem;
 

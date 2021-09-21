@@ -64,6 +64,24 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
                   </li>
                   <li>
                     <a
+                      href="https://www.origamid.com/certificate/38fac55f/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      UX Design Heuristics
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.origamid.com/certificate/0bf03a24/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Advanced UI Design
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://www.origamid.com/certificate/1d367756/"
                       target="_blank"
                       rel="noopener"
@@ -124,6 +142,24 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
                   </li>
                   <li>
                     <a
+                      href="https://www.origamid.com/certificate/38fac55f/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      UX Design Heurísticas
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.origamid.com/certificate/0bf03a24/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      UI Design Avançado
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://www.origamid.com/certificate/1d367756/"
                       target="_blank"
                       rel="noopener"
@@ -167,6 +203,7 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
                 <ul>
                   <li>Discover Path</li>
                   <li>Next Level Week 5</li>
+                  <li>Next Level Week Together</li>
                 </ul>
               </>
             ) : (
@@ -175,6 +212,7 @@ const LicencesAndCertifications: React.FC<LicencesAndCertificationsProps> = ({
                 <ul>
                   <li>Trilha Discover</li>
                   <li>Next Level Week 5</li>
+                  <li>Next Level Week Together</li>
                 </ul>
               </>
             )}

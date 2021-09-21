@@ -2,11 +2,25 @@ const data = {
   experience: [
     {
       id: '0',
+      tag: '2b Digital by TOTVS Ibirapuera',
+      title: 'Desenvolvedor Front-End (júnior)',
+      titleEng: 'Front-End Developer (junior)',
+      period: 'set 2021 — presente',
+      periodEng: 'sept 20121 — present',
+      description:
+        'Manutenção e desenvolvimento de features para e-commerces dentro da plataforma Vtex. Criação de landing pages, e e-mail marketing. Integro a equipe de OnGoing da agência.',
+      descriptionEng:
+        "Maintenance and development of features for e-commerce in the platform Vtex. Landing page creation and email marketing. I am part of the agency's OnGoing team.",
+      techs: 'Vue.js,JavaScript,Sass,CSS 3,HTML 5',
+      image: require('../assets/Logo2b.png').default
+    },
+    {
+      id: '1',
       tag: 'EGO Comunicação Estratégica',
       title: 'Desenvolvedor Front-End (estágio)',
       titleEng: 'Front-End Developer (internship)',
-      period: 'out 2019 — presente',
-      periodEng: 'oct 2019 — present',
+      period: 'out 2019 — ago 2021',
+      periodEng: 'oct 2019 — aug 2021',
       description:
         'Construção e desenvolvimento de websites institucionais, landing pages e elaboração de planejamentos de comunicação integrando a equipe de Digital Strategy da agência.',
       descriptionEng:
@@ -15,7 +29,7 @@ const data = {
       image: require('../assets/LogoEGO.png').default
     },
     {
-      id: '1',
+      id: '2',
       tag: 'SRL Comunicação',
       title: 'Redator publicitário (pleno)',
       titleEng: 'Advertising copywriter',
@@ -29,7 +43,7 @@ const data = {
       image: require('../assets/LogoSRL.png').default
     },
     {
-      id: '2',
+      id: '3',
       tag: 'GO! Guia de Orgânicos',
       title: 'Repórter e redator  (pleno)',
       titleEng: 'Reporter and copywriter',
@@ -43,7 +57,7 @@ const data = {
       image: require('../assets/LogoGO.png').default
     },
     {
-      id: '3',
+      id: '4',
       tag: 'Freelancer',
       title: 'Assessor de Imprensa Parlamentar (pleno) ',
       titleEng: 'City Council Communications Director',
@@ -57,12 +71,12 @@ const data = {
       image: require('../assets/LogoFreelancer.png').default
     },
     {
-      id: '4',
+      id: '5',
       tag: 'Jornal Boqnews',
       title: 'Repórter  (estagiário) ',
       titleEng: 'News Reporter (internship)',
       period: 'set 2013 — abr 2016',
-      periodEng: 'sep 2013 — apr 2016',
+      periodEng: 'sept 2013 — apr 2016',
       description:
         'Reportagens para jornal impresso em diversas editorias. Redação e locução de boletins de rádio. Realização de videorreportagens e coberturas jornalísticas de âmbito regional. Diagramação, elaboração de infográficos, fotografia, edição de foto, vídeo e áudio.',
       descriptionEng:
